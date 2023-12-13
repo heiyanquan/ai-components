@@ -19,6 +19,7 @@ specifiers:
   fs-extra: ^11.2.0
   gulp: ^4.0.2
   husky: ^8.0.1
+  immer: ^10.0.3
   lint-staged: ^13.0.3
   lodash: ^4.17.21
   prettier: ^2.7.1
@@ -27,6 +28,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   stylelint: ^14.9.1
+  use-immer: ^0.9.0
 
 dependencies:
   '@ant-design/icons': 5.2.6_biqbaboplfbrettd7655fr4n2y
@@ -35,7 +37,9 @@ dependencies:
   consola: 3.2.3
   dayjs: 1.11.10
   gulp: 4.0.2
+  immer: 10.0.3
   lodash: 4.17.21
+  use-immer: 0.9.0_immer@10.0.3+react@18.2.0
 
 devDependencies:
   '@commitlint/cli': 17.8.1
@@ -7313,6 +7317,10 @@ packages:
       queue: 6.0.1
     dev: true
 
+  /immer/10.0.3:
+    resolution: {integrity: sha512-pwupu3eWfouuaowscykeckFmVTpqbzW+rXFCX8rQLkZzM9ftBmU/++Ra+o+L27mz03zJTlyV4UUr+fdKNffo4A==}
+    dev: false
+
   /immutable/4.3.4:
     resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
     dev: true
@@ -13842,6 +13850,16 @@ packages:
       punycode: 1.4.1
       qs: 6.11.2
     dev: true
+
+  /use-immer/0.9.0_immer@10.0.3+react@18.2.0:
+    resolution: {integrity: sha512-/L+enLi0nvuZ6j4WlyK0US9/ECUtV5v9RUbtxnn5+WbtaXYUaOBoKHDNL9I5AETdurQ4rIFIj/s+Z5X80ATyKw==}
+    peerDependencies:
+      immer: '>=2.0.0'
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      immer: 10.0.3
+      react: 18.2.0
+    dev: false
 
   /use-isomorphic-layout-effect/1.1.2_3yvlg3t3h6lwxz7px5kwweh27e:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
