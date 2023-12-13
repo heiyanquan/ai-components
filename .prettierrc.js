@@ -6,7 +6,7 @@ module.exports = {
   ],
   printWidth: 80,
   proseWrap: 'never',
-  singleQuote: false,
+  singleQuote: true,
   trailingComma: 'all',
   overrides: [
     {
