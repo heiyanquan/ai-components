@@ -1,0 +1,83 @@
+{
+  "name": "hs-react-admin",
+  "version": "0.0.4",
+  "description": "A react library developed with dumi",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "unpkg": "dist/hs-react-admin.min.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepublishOnly": "father doctor && npm run build",
+    "release": "gulp --require @esbuild-kit/cjs-loader -f scripts/release.ts",
+    "start": "npm run dev"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@esbuild-kit/cjs-loader": "^2.4.4",
+    "@types/classnames": "^2.3.1",
+    "consola": "^3.2.3",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/lint": "^4.0.0",
+    "dumi": "^2.2.13",
+    "eslint": "^8.23.0",
+    "father": "^4.1.0",
+    "fs-extra": "^11.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^14.9.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://repo.aihuoshi.net/repository/npm-huoshi/"
+  },
+  "authors": []
+}
