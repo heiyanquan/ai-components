@@ -1,0 +1,15 @@
+{
+  "name": "@hs-admin/base-components",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hs-admin/utils": "workspace:*"
+  },
+  "keywords": [],
+  "description": ""
+}
