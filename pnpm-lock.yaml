@@ -63,6 +63,9 @@ importers:
       antd:
         specifier: ^5.11.2
         version: 5.12.2(react-dom@18.2.0)(react@18.2.0)
+      chalk:
+        specifier: ^4.1.2
+        version: 4.1.2
       dumi:
         specifier: ^2.2.13
         version: 2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(@types/react@18.2.45)(eslint@8.55.0)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@4.7.4)(webpack@5.89.0)

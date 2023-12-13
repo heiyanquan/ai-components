@@ -74,6 +74,7 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
     "antd": "^5.11.2",
+    "chalk": "^4.1.2",
     "dumi": "^2.2.13",
     "eslint": "^8.23.0",
     "father": "^4.1.0",

@@ -3,7 +3,7 @@
 分页
 
 ```jsx
-import { HsAdminPage } from 'hs-react-admin';
+import { HsAdminPage } from '@hs-react-admin/base-components';
 
 export default () => <HsAdminPage defaultCurrent={1} total={54} />
 ```

@@ -1,5 +1,5 @@
-export { default as Foo } from './Foo';
-export { default as HsAdminInput } from './Input';
+export { default as Foo } from './foo';
+export { default as HsAdminInput } from './input';
 export { default as HsAdminPage } from './Page';
 export { default as HsAdminSelect } from './Select';
 export { default as HsAdminSpin } from './Spin';

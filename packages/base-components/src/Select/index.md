@@ -3,7 +3,7 @@
 下拉选择
 
 ```jsx
-import { HsAdminSelect } from 'hs-react-admin';
+import { HsAdminSelect } from '@hs-react-admin/base-components';
 
 export default () => 
   <HsAdminSelect
