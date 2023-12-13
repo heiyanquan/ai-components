@@ -29,6 +29,6 @@ export const version = {
 `;
 
 writeFileSync(
-  join(packagesPath, 'components', '/src/version.ts'),
+  join(packagesPath, 'base-components', '/src/version.ts'),
   prettier.format(file_content, { parser: 'typescript' }).toString(),
 );

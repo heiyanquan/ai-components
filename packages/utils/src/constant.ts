@@ -20,5 +20,4 @@ export const PERMISSIONROUTERLIST = 'permissionRouterList'
 export const MENUOPTIONS = 'menuOptions'
 // 默认空值
 export const EMPTYTEXT = '--'
-// 本地开发环境
-export const __DEV__ = !import.meta.env.PROD
+

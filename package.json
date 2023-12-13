@@ -18,7 +18,7 @@
   "scripts": {
     "version": "node ./scripts/gen_version.js",
     "build": "npm run version && npm run build-components",
-    "build-components": "pnpm --filter '@ant-design/**' build",
+    "build-components": "pnpm --filter '@hs-react-admin/**' build",
     "build:watch": "father dev",
     "dev": "dumi dev",
     "build:docs": "dumi build",
@@ -57,6 +57,7 @@
     "@ant-design/icons": "^5.2.6",
     "@esbuild-kit/cjs-loader": "^2.4.4",
     "@types/classnames": "^2.3.1",
+    "axios": "^1.6.2",
     "consola": "^3.2.3",
     "dayjs": "^1.11.10",
     "gulp": "^4.0.2",
@@ -65,6 +66,7 @@
     "use-immer": "^0.9.0"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.23.3",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/lodash": "^4.14.202",
@@ -83,7 +85,8 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "stylelint": "^14.9.1"
+    "stylelint": "^14.9.1",
+    "typescript": "4.7.4"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
