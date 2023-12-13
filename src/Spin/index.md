@@ -1,9 +1,9 @@
-# HsAdminInput
+# HsAdminSpin
 
 This is an example component.
 
 ```jsx
-import { HsAdminInput } from 'hs-react-admin';
+import { HsAdminSpin } from 'hs-react-admin';
 
-export default () => <HsAdminInput value="Hello dumi!" />
+export default () => <HsAdminSpin />
 ```

@@ -1,9 +1,19 @@
-# HsAdminInput
+# HsAdminSelect
 
 This is an example component.
 
 ```jsx
-import { HsAdminInput } from 'hs-react-admin';
+import { HsAdminSelect } from 'hs-react-admin';
 
-export default () => <HsAdminInput value="Hello dumi!" />
+export default () => 
+  <HsAdminSelect
+    defaultValue="lucy"
+    style={{ width: 120 }}
+    options={[
+      { value: 'jack', label: 'Jack' },
+      { value: 'lucy', label: 'Lucy' },
+      { value: 'Yiminghe', label: 'yiminghe' },
+      { value: 'disabled', label: 'Disabled', disabled: true },
+    ]}
+  />
 ```
