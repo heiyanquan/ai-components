@@ -11,16 +11,16 @@
         ".dumi/tmp/*"
       ],
       "hs-react-admin": [
-        "src"
+        "packages/base-components"
       ],
       "hs-react-admin/*": [
-        "src/*",
+        "packages/base-components/*",
         "*"
       ]
     }
   },
   "include": [
     ".dumirc.ts",
-    "src/**/*"
+    "packages/base-components/**/*"
   ]
 }
