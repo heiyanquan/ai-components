@@ -1,8 +1,11 @@
 {
   "name": "hs-react-admin",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "A react library developed with dumi",
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "main": "lib/index.js",
   "unpkg": "dist/hs-react-admin.min.js",
   "module": "es/index.js",
@@ -13,7 +16,9 @@
     "es"
   ],
   "scripts": {
-    "build": "father build",
+    "version": "node ./scripts/gen_version.js",
+    "build": "npm run version && npm run build-components",
+    "build-components": "pnpm --filter '@ant-design/**' build",
     "build:watch": "father dev",
     "dev": "dumi dev",
     "build:docs": "dumi build",
@@ -23,7 +28,8 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "release": "gulp --require @esbuild-kit/cjs-loader -f scripts/release.ts",
-    "start": "npm run dev"
+    "start": "npm run version && dumi dev",
+    "clear": "rimraf **/*/node_modules && rimraf node_modules"
   },
   "commitlint": {
     "extends": [
@@ -81,7 +87,7 @@
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
-    "lodash": "^4.17.21",
+    "lodash": ">=4.17.21",
     "react": ">=18.2.0",
     "react-dom": ">=18.2.0"
   },

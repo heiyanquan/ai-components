@@ -1,18 +1,35 @@
 {
-  "name": "@hs-admin/utils",
-  "private": true,
-  "main": "index.ts",
+  "name": "@hs-react-admin/utils",
+  "version": "0.0.1",
+  "description": "@hs-react-admin/utils",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "father build"
   },
-  "author": "",
-  "license": "ISC",
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
   "dependencies": {
-    "axios": "^1.5.0",
-    "dayjs": "^1.11.10",
-    "lodash": "^4.17.21",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
+    "@babel/runtime": "^7.18.0",
+    "omit.js": "^2.0.2"
   },
-  "keywords": [],
-  "description": ""
+  "peerDependencies": {
+    "antd": ">=5.11.2",
+    "lodash": ">=4.17.21"
+  },
+  "publishConfig": {
+    "registry": "https://repo.aihuoshi.net/repository/npm-huoshi/"
+  }
 }

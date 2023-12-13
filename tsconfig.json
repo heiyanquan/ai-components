@@ -1,26 +1,38 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "baseUrl": "./",
+    "resolveJsonModule": true,
     "paths": {
-      "@@/*": [
-        ".dumi/tmp/*"
-      ],
-      "hs-react-admin": [
-        "packages/base-components"
-      ],
-      "hs-react-admin/*": [
-        "packages/base-components/*",
-        "*"
-      ]
+      "@@/*": [".dumi/tmp/*"],
+      "@ant-design/pro-layout": ["./packages/base-components/src/index.tsx"]
     }
   },
   "include": [
+    "./tests/setupTests.ts",
+    ".dumi/**/*",
+    "jest.config.ts",
     ".dumirc.ts",
-    "packages/base-components/**/*"
+    "typings.d.ts",
+    "**/src/**/*",
+    "**/docs/**/*",
+    "scripts/**/*",
+    "**/demos",
+    ".eslintrc.js",
+    "tests",
+    "jest.config.ts",
+    "**/fixtures",
+    "./tests/no-duplicated.ts",
+    "packages/descriptions/src/demos/.tsx"
   ]
 }
