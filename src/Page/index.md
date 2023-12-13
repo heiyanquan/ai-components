@@ -1,6 +1,6 @@
 # HsAdminPage
 
-This is an example component.
+分页
 
 ```jsx
 import { HsAdminPage } from 'hs-react-admin';

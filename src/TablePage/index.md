@@ -1,6 +1,6 @@
 # HsAdminTablePage
 
-This is an example component.
+表格+分页
 
 ```jsx
 import { HsAdminTablePage } from 'hs-react-admin';

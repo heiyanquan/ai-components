@@ -1,6 +1,6 @@
 # HsAdminTable
 
-This is an example component.
+表格
 
 ```jsx
 import { HsAdminTable } from 'hs-react-admin';

@@ -1,6 +1,6 @@
 # HsAdminSpin
 
-This is an example component.
+加载中
 
 ```jsx
 import { HsAdminSpin } from 'hs-react-admin';

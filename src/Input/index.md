@@ -1,6 +1,6 @@
 # HsAdminInput
 
-This is an example component.
+Input输入框
 
 ```jsx
 import { HsAdminInput } from 'hs-react-admin';

@@ -1,12 +1,12 @@
 ---
 hero:
-  title: library
-  description: A react library developed with dumi
+  title: hs-react-admin
+  description: 一个React管理后台组件库
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: 指南
+      link: /guide
+    - text: 组件库
+      link: /components/input
 features:
   - title: Hello
     emoji: 💎
@@ -21,4 +21,3 @@ features:
 footer: Open-source MIT Licensed | © 2017-present111
 ---
 
-hs-react-admin

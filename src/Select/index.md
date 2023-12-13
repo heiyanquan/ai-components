@@ -1,6 +1,6 @@
 # HsAdminSelect
 
-This is an example component.
+下拉选择
 
 ```jsx
 import { HsAdminSelect } from 'hs-react-admin';
