@@ -29,7 +29,7 @@ $ pnpm run build
 $ pnpm run build:watch
 
 # build docs
-$ pnpm run docs:build
+$ pnpm run build:docs
 
 # check your project for potential problems
 $ pnpm run doctor

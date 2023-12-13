@@ -16,7 +16,7 @@
     "build": "father build",
     "build:watch": "father dev",
     "dev": "dumi dev",
-    "docs:build": "dumi build",
+    "build:docs": "dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
