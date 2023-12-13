@@ -120,9 +120,7 @@ const HsAdminUpload: FC<Props> = (props: Props) => {
   // 上传组件属性
   const uploadProps: any = useMemo(
     () => ({
-      action:
-        action ||
-        `${import.meta.env.VITE_BUSINESS_API_URL}/api/datamarket/file/upload`,
+      action,
       headers: {
         Authorization: `Bearer ${getItem('token')}`,
         'X-Requested-With': null,
