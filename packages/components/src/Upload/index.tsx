@@ -1,14 +1,7 @@
 import { UploadOutlined } from '@ant-design/icons';
 import type { UploadFile, UploadProps } from 'antd';
-import { Button, Modal, Upload, message } from 'antd';
-import React, {
-  FC,
-  memo,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { Button, message, Modal, Upload } from 'antd';
+import { FC, memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { getItem } from './storage';
 
 type IdsType = number[] | string | number;

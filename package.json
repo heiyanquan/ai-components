@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "A react library developed with dumi",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
   "main": "lib/index.js",
   "unpkg": "dist/hs-react-admin.min.js",
   "module": "es/index.js",
@@ -15,22 +12,25 @@
     "lib",
     "es"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "version": "node ./scripts/gen_version.js",
     "build": "npm run version && npm run build-components",
     "build-components": "pnpm --filter '@hs-react-admin/**' build",
-    "build:watch": "father dev",
-    "dev": "dumi dev",
     "build:docs": "dumi build",
+    "build:watch": "father dev",
+    "clear": "rimraf **/*/node_modules && rimraf node_modules",
+    "dev": "dumi dev",
     "doctor": "father doctor",
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx  --fix --format=pretty ./ && npm run lint:prettier",
     "lint:prettier": "npm run prettier &&  git diff && prettier --version && prettier --check \"packages/**/**.{js,jsx,tsx,ts,less,md,json}\" --end-of-line auto",
-    "prettier": "prettier --write \"**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "prepublishOnly": "father doctor && npm run build",
-    "release:old": "gulp --require @esbuild-kit/cjs-loader -f scripts/release.ts",
+    "prettier": "prettier --write \"**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "release": "node ./scripts/release.js",
+    "release:old": "gulp --require @esbuild-kit/cjs-loader -f scripts/release.ts",
     "start": "npm run version && dumi dev",
-    "clear": "rimraf **/*/node_modules && rimraf node_modules"
+    "version": "node ./scripts/gen_version.js"
   },
   "commitlint": {
     "extends": [

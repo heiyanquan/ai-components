@@ -1,5 +1,5 @@
 import { Input } from 'antd';
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 
 const HsAdminInput: FC<any> = (props: any) => {
   const { TextArea, Search, Password, ...rest } = props;

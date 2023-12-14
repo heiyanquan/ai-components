@@ -1,5 +1,5 @@
 import { Table } from 'antd';
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 import {
   hsHandleTableDate,
   hsHandleTableDateTime,
