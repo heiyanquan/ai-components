@@ -31,16 +31,8 @@ const { yParser } = require('@umijs/utils');
         main: 'lib/index.js',
         types: 'lib/index.d.ts',
         files: ['lib', 'src', 'dist', 'es'],
-        repository: {
-          type: 'git',
-          url: 'https://github.com/',
-        },
         browserslist: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 11'],
         keywords: ['antd', 'admin', 'hs-react-admin'],
-        authors: [
-          'chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)',
-          'chenshuai2144 <qixian.cs@outlook.com> (https://github.com/chenshuai2144)',
-        ],
         license: 'MIT',
         bugs: 'http://github.com/umijs/plugins/issues',
         homepage: `https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/-/tree/release/packages/${shortName}#readme`,
