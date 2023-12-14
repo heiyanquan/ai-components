@@ -121,15 +121,15 @@ async function release() {
   logStep(`publish packages: ${chalk.blue(pkgs.join(', '))}`);
 
   // 获取 opt 的输入
-  const { otp } = await inquirer.prompt([
-    {
-      type: 'input',
-      name: 'otp',
-      message: '请输入 otp 的值，留空表示不使用 otp',
-    },
-  ]);
+  // const { otp } = await inquirer.prompt([
+  //   {
+  //     type: 'input',
+  //     name: 'otp',
+  //     message: '请输入 otp 的值，留空表示不使用 otp',
+  //   },
+  // ]);
 
-  process.env.NPM_CONFIG_OTP = otp;
+  // process.env.NPM_CONFIG_OTP = otp;
 
   const publishList = pkgs.map((pkg, index) => {
     const pkgPath = join(cwd, 'packages', pkg.replace('pro-', ''));
