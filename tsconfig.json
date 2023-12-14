@@ -17,10 +17,10 @@
       "@@/*": [
         ".dumi/tmp/*"
       ],
-      "@hs-react-admin/base-components": [
-        "./packages/base-components/src/index.tsx"
+      "@hs-react-admin/pro-components": [
+        "./packages/components/src/index.tsx"
       ],
-      "@hs-react-admin/utils": [
+      "@hs-react-admin/pro-utils": [
         "./packages/utils/src/index.tsx"
       ]
     },

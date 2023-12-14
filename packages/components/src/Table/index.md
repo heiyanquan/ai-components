@@ -3,7 +3,7 @@
 表格
 
 ```jsx
-import { HsAdminTable } from '@hs-react-admin/base-components';
+import { HsAdminTable } from '@hs-react-admin/pro-components';
 import { Space, Tag } from 'antd'
 import type { ColumnsType } from 'antd/es/table'
 

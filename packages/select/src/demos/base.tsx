@@ -1,4 +1,4 @@
-import { HsAdminSelect } from '@hs-react-admin/base-components';
+import { HsAdminSelect } from '@hs-react-admin/pro-components';
 
 export default () => (
   <HsAdminSelect

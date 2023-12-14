@@ -9,7 +9,7 @@ const pkgList = readdirSync(join(__dirname, 'packages')).filter(
 );
 
 const alias = pkgList.reduce((pre, pkg) => {
-  pre[`@hs-react-admin/${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+  pre[`@hs-react-admin/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src');
   return {
     ...pre,
   };
