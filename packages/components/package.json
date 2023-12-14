@@ -5,12 +5,13 @@
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
+  "unpkg": "dist/components.min.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
+    "dist",
     "lib",
-    "es",
-    "dist"
+    "es"
   ],
   "scripts": {
     "build": "father build"
