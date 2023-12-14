@@ -54,7 +54,7 @@ const getMds = async (allVersion = false) => {
   }
   console.log(versions.toString());
   versions.map(async (version) => {
-    const versionPkg = `@ant-design/pro-${pkg}@${version}`;
+    const versionPkg = `@hs-react-admin/pro-${pkg}@${version}`;
     const changeLog = getChangelog(content, versionPkg);
 
     if (!changeLog) {
@@ -66,7 +66,7 @@ const getMds = async (allVersion = false) => {
     try {
       const tag = await github.rest.repos
         .getReleaseByTag({
-          owner: 'ant-design',
+          owner: 'hs-react-admin',
           repo: 'pro-components',
           tag: versionPkg,
         })
@@ -84,7 +84,7 @@ const getMds = async (allVersion = false) => {
       if (!tag.body && tag) {
         github.rest.repos
           .updateRelease({
-            owner: 'ant-design',
+            owner: 'hs-react-admin',
             release_id,
             repo: 'pro-components',
             tag_name: versionPkg,
@@ -104,7 +104,7 @@ const getMds = async (allVersion = false) => {
       console.log(versionPkg + '标签创建中');
       github.rest.repos
         .createRelease({
-          owner: 'ant-design',
+          owner: 'hs-react-admin',
           repo: 'pro-components',
           tag_name: versionPkg,
           name: versionPkg,

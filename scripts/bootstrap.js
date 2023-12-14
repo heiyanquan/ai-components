@@ -9,7 +9,7 @@ const { yParser } = require('@umijs/utils');
   const pkgs = readdirSync(join(__dirname, '../packages')).filter((pkg) => pkg.charAt(0) !== '.');
 
   pkgs.forEach((shortName) => {
-    const name = `@ant-design/pro-${shortName}`;
+    const name = `@hs-react-admin/pro-${shortName}`;
 
     const pkgJSONPath = join(__dirname, '..', 'packages', shortName, 'package.json');
     const pkgJSONExists = existsSync(pkgJSONPath);
@@ -25,17 +25,17 @@ const { yParser } = require('@umijs/utils');
         files: ['lib', 'src', 'dist', 'es'],
         repository: {
           type: 'git',
-          url: 'https://github.com/ant-design/pro-components',
+          url: 'https://github.com/',
         },
         browserslist: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 11'],
-        keywords: ['antd', 'admin', 'ant-design', 'ant-design-pro'],
+        keywords: ['antd', 'admin', 'hs-react-admin'],
         authors: [
           'chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)',
           'chenshuai2144 <qixian.cs@outlook.com> (https://github.com/chenshuai2144)',
         ],
         license: 'MIT',
         bugs: 'http://github.com/umijs/plugins/issues',
-        homepage: `https://github.com/ant-design/pro-components/tree/master/packages/${shortName}#readme`,
+        homepage: `https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/-/tree/release/packages/${shortName}#readme`,
         peerDependencies: {
           umi: '3.x',
         },
