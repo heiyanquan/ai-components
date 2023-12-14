@@ -35,12 +35,12 @@ export default defineConfig({
           title: '基础组件',
           children: [
             {
-              title: 'foo - 测试组件',
-              link: '/components/foo',
-            },
-            {
               title: 'input - 输入框',
               link: '/components/input',
+            },
+            {
+              title: 'select - 选择器',
+              link: '/components/select',
             },
           ],
         },

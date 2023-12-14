@@ -1,11 +1,6 @@
-# HsAdminSelect
-
-下拉选择
-
-```jsx
 import { HsAdminSelect } from '@hs-react-admin/base-components';
 
-export default () => 
+export default () => (
   <HsAdminSelect
     defaultValue="lucy"
     style={{ width: 120 }}
@@ -16,4 +11,4 @@ export default () =>
       { value: 'disabled', label: 'Disabled', disabled: true },
     ]}
   />
-```
+);

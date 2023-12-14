@@ -1,6 +1,6 @@
 import { Select } from 'antd';
 import debounce from 'lodash/debounce';
-import React, { memo, useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 const HsAdminSelect = (props: any) => {
   const debounceTimeout = 400;
