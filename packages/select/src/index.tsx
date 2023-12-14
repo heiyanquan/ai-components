@@ -1,27 +1,17 @@
 import { Select } from 'antd';
-import debounce from 'lodash/debounce';
-import { memo, useMemo } from 'react';
+import { memo } from 'react';
 
 const HsAdminSelect = (props: any) => {
-  const debounceTimeout = 400;
-
   const filterOption: any = (
     input: string,
     option: { label: string; value: string },
   ) => (option?.label ?? '').toLowerCase().includes(input.toLowerCase());
-
-  const handleSearch = useMemo(() => {
-    if (props.onSearch) {
-      return debounce(props.onSearch, debounceTimeout);
-    }
-  }, [debounceTimeout, props.onSearch]);
 
   return (
     <Select
       allowClear
       showSearch
       filterOption={filterOption}
-      onSearch={handleSearch}
       {...props}
     ></Select>
   );
