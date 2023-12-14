@@ -22,12 +22,10 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.18.0",
-    "omit.js": "^2.0.2"
+    "@babel/runtime": "^7.18.0"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
-    "lodash": ">=4.17.21",
     "react": ">=18.2.0",
     "react-dom": ">=18.2.0"
   },

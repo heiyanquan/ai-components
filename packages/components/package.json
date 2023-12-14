@@ -23,7 +23,9 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "omit.js": "^2.0.2"
+    "@hs-react-admin/pro-input": "^0.0.2",
+    "@hs-react-admin/pro-select": "^0.0.2",
+    "@hs-react-admin/pro-utils": "^0.0.2"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
