@@ -111,17 +111,14 @@ async function release() {
     const { name, version } = require(join(pkgPath, 'package.json'));
     const isNext = isNextVersion(version);
     let isPackageExist = null;
-    console.log('[ 11 ] >', 11);
     if (args.publishOnly) {
       isPackageExist = packageExists({ name, version });
-      console.log('[ 22 ] >', 22);
       if (isPackageExist) {
         console.log(
           `package ${name}@${version} is already exists on npm, skip.`,
         );
       }
     }
-    console.log('[ 33 ] >', 33);
     if (!args.publishOnly || !isPackageExist) {
       console.log(
         `[${index + 1}/${pkgs.length}] Publish package ${name} ${
@@ -140,7 +137,6 @@ async function release() {
         cwd: pkgPath,
       });
     }
-    console.log('[ 44 ] >', 44);
   });
   console.log('发布中' + pkgs.join('/'));
   await Promise.all(publishList);
