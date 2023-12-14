@@ -2,7 +2,6 @@ const { yParser, chalk } = require('@umijs/utils');
 const { join } = require('path');
 const exec = require('./utils/exec');
 const execa = require('execa');
-const inquirer = require('inquirer');
 const getPackages = require('./utils/getPackages');
 const isNextVersion = require('./utils/isNextVersion');
 
@@ -25,18 +24,6 @@ function packageExists({ name, version }) {
 }
 
 async function release() {
-  // Check git status
-  if (!args.skipGitStatusCheck) {
-    const gitStatus = execa.sync('git', ['status', '--porcelain']).stdout;
-    if (gitStatus.length) {
-      printErrorAndExit(`Your git status is not clean. Aborting.`);
-    }
-  } else {
-    logStep(
-      'git status check is skipped, since --skip-git-status-check is supplied',
-    );
-  }
-
   // Check npm registry
   logStep('check npm registry');
   const userRegistry = execa.sync('npm', ['config', 'get', 'registry']).stdout;
@@ -119,31 +106,22 @@ async function release() {
   // Umi must be the latest.
   const pkgs = args.publishOnly ? getPackages() : updated;
   logStep(`publish packages: ${chalk.blue(pkgs.join(', '))}`);
-
-  // 获取 opt 的输入
-  // const { otp } = await inquirer.prompt([
-  //   {
-  //     type: 'input',
-  //     name: 'otp',
-  //     message: '请输入 otp 的值，留空表示不使用 otp',
-  //   },
-  // ]);
-
-  // process.env.NPM_CONFIG_OTP = otp;
-
   const publishList = pkgs.map((pkg, index) => {
     const pkgPath = join(cwd, 'packages', pkg.replace('pro-', ''));
     const { name, version } = require(join(pkgPath, 'package.json'));
     const isNext = isNextVersion(version);
     let isPackageExist = null;
+    console.log('[ 11 ] >', 11);
     if (args.publishOnly) {
       isPackageExist = packageExists({ name, version });
+      console.log('[ 22 ] >', 22);
       if (isPackageExist) {
         console.log(
           `package ${name}@${version} is already exists on npm, skip.`,
         );
       }
     }
+    console.log('[ 33 ] >', 33);
     if (!args.publishOnly || !isPackageExist) {
       console.log(
         `[${index + 1}/${pkgs.length}] Publish package ${name} ${
@@ -162,6 +140,7 @@ async function release() {
         cwd: pkgPath,
       });
     }
+    console.log('[ 44 ] >', 44);
   });
   console.log('发布中' + pkgs.join('/'));
   await Promise.all(publishList);
