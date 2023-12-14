@@ -1,6 +1,6 @@
 {
   "name": "@hs-react-admin/pro-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@hs-react-admin/pro-components",
   "license": "MIT",
   "sideEffects": false,
@@ -23,9 +23,9 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-input": "^0.0.3",
-    "@hs-react-admin/pro-select": "^0.0.3",
-    "@hs-react-admin/pro-utils": "^0.0.3"
+    "@hs-react-admin/pro-input": "^0.0.4",
+    "@hs-react-admin/pro-select": "^0.0.4",
+    "@hs-react-admin/pro-utils": "^0.0.4"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
