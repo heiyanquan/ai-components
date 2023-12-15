@@ -43,6 +43,10 @@ export default defineConfig({
               link: '/components/select',
             },
             {
+              title: 'spin - 加载中',
+              link: '/components/spin',
+            },
+            {
               title: 'table - 表格',
               link: '/components/table',
             },
