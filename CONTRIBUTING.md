@@ -48,6 +48,7 @@ $ pnpm test --coverage
 ## Release
 
 ```bash
+$ pnpm --filter '@hs-react-admin/**' build
 $ npm run release -- --tag=latest
 $ npm run release
 $ npm run release -- --publish-only
