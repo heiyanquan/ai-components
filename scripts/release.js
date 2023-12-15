@@ -125,7 +125,6 @@ async function release() {
           isNext ? 'with next tag' : ''
         }`,
       );
-      console.log('[ 11 ] >', 11)
       // 默认设置为 tag 检查通过之后在设置为 latest
       let cliArgs = isNext
         ? ['publish', '--tag', 'next']
@@ -134,6 +133,8 @@ async function release() {
       if (args.tag) {
         cliArgs = ['publish', '--tag', args.tag];
       }
+      console.log('[ cliArgs ] >', cliArgs);
+      console.log('[ pkgPath ] >', pkgPath);
       return execa('npm', cliArgs, {
         cwd: pkgPath,
       });

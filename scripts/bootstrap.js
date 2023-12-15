@@ -23,7 +23,7 @@ const { yParser } = require('@umijs/utils');
     const pkgJSONExists = existsSync(pkgJSONPath);
     let json;
     if (args.force || !pkgJSONExists) {
-      console.log('[ bootstrap ] >', bootstrap)
+      console.log('[ bootstrap ] >', bootstrap);
       json = {
         name,
         version,
