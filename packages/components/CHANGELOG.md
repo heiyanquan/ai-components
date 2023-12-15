@@ -1,23 +1,14 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 ## [0.0.17](https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/compare/@hs-react-admin/pro-components@0.0.16...@hs-react-admin/pro-components@0.0.17) (2023-12-15)
 
 **Note:** Version bump only for package @hs-react-admin/pro-components
 
-
-
-
-
 ## [0.0.16](https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/compare/@hs-react-admin/pro-components@0.0.15...@hs-react-admin/pro-components@0.0.16) (2023-12-15)
 
 **Note:** Version bump only for package @hs-react-admin/pro-components
-
-
-
-
 
 ## [0.0.15](https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/compare/@hs-react-admin/pro-components@0.0.14...@hs-react-admin/pro-components@0.0.15) (2023-12-15)
 

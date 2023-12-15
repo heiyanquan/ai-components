@@ -36,10 +36,7 @@ interface SetStatePage {
   showTotal: (total: number) => string;
 }
 
-export const usePage: any = (
-  doRequest?: () => Promise<any>,
-  initOptions?: SetStatePage,
-) => {
+export const usePage: any = (doRequest?: () => Promise<any>, initOptions?: SetStatePage) => {
   const [pagination, setPagination] = useState<SetStatePage>({
     current: 1,
     pageSize: 10,

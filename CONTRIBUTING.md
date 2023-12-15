@@ -78,10 +78,6 @@ packages/foo
 
 change the `authors` in package.json
 
-发布
-npm publish --tag=beta #发布不稳定 beta 版
-npm publish #发布稳定版，即 npm publish --tag=latest
+发布 npm publish --tag=beta #发布不稳定 beta 版 npm publish #发布稳定版，即 npm publish --tag=latest
 
-安装
-npm install [npm-name]@beta #安装 beta 版
-npm install [npm-name] #安装最新的稳定版，即 npm install [npm-name]@latest
+安装 npm install [npm-name]@beta #安装 beta 版 npm install [npm-name] #安装最新的稳定版，即 npm install [npm-name]@latest

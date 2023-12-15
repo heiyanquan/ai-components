@@ -1,7 +1,6 @@
 # hs-react-admin
 
-[![NPM version](https://img.shields.io/npm/v/hs-react-admin.svg?style=flat)](https://npmjs.org/package/hs-react-admin)
-[![NPM downloads](http://img.shields.io/npm/dm/hs-react-admin.svg?style=flat)](https://npmjs.org/package/hs-react-admin)
+[![NPM version](https://img.shields.io/npm/v/hs-react-admin.svg?style=flat)](https://npmjs.org/package/hs-react-admin) [![NPM downloads](http://img.shields.io/npm/dm/hs-react-admin.svg?style=flat)](https://npmjs.org/package/hs-react-admin)
 
 A react library developed with dumi
 

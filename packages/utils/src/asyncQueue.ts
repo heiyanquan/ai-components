@@ -6,10 +6,7 @@
  * @return {*}
  */
 export default class AsyncQueue {
-  public constructor(
-    private queue: any[] = [],
-    private running: boolean = false,
-  ) {}
+  public constructor(private queue: any[] = [], private running: boolean = false) {}
 
   public push(fun: any, duration: number, immediately = false) {
     return new Promise((resolve, reject) => {

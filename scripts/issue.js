@@ -43,14 +43,11 @@ ${list
 };
 
 const findIssue = async (issueId) => {
-  const { data } = await octokit.request(
-    'GET /repos/{owner}/{repo}/issues/{issue_number}',
-    {
-      owner: 'hs-react-admin',
-      repo: 'pro-components',
-      issue_number: issueId,
-    },
-  );
+  const { data } = await octokit.request('GET /repos/{owner}/{repo}/issues/{issue_number}', {
+    owner: 'hs-react-admin',
+    repo: 'pro-components',
+    issue_number: issueId,
+  });
   return data;
 };
 const closeIssue = async (issueId) => {
@@ -62,15 +59,12 @@ const closeIssue = async (issueId) => {
   });
 };
 const replyCommit = async (issueId, markdown) => {
-  await octokit.request(
-    'POST /repos/{owner}/{repo}/issues/{issue_number}/comments',
-    {
-      owner: 'hs-react-admin',
-      repo: 'pro-components',
-      issue_number: issueId,
-      body: markdown,
-    },
-  );
+  await octokit.request('POST /repos/{owner}/{repo}/issues/{issue_number}/comments', {
+    owner: 'hs-react-admin',
+    repo: 'pro-components',
+    issue_number: issueId,
+    body: markdown,
+  });
 };
 
 const reply = async () => {
