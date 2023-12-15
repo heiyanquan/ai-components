@@ -131,11 +131,8 @@ async function release() {
         : ['publish', '--tag', 'beta'];
 
       if (args.tag) {
-        console.log('[ args.tag ] >', args.tag);
         cliArgs = ['publish', '--tag', args.tag];
       }
-      console.log('[ cliArgs ] >', cliArgs);
-      console.log('[ pkgPath ] >', pkgPath);
       return execa('npm', cliArgs, {
         cwd: pkgPath,
       });

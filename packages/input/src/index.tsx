@@ -32,7 +32,7 @@ const HsAdminInput: FC<any> = (props: any) => {
       ></Input.Password>
     );
   } else {
-    return <Input allowClear showCount maxLength={50} {...rest}></Input>;
+    return <Input allowClear showCount maxLength={500} {...rest}></Input>;
   }
 };
 

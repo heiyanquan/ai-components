@@ -12,6 +12,7 @@ const HsAdminSelect = (props: any) => {
       allowClear
       showSearch
       filterOption={filterOption}
+      placeholder="请选择"
       {...props}
     ></Select>
   );
