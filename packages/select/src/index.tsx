@@ -1,5 +1,6 @@
 import { Select } from 'antd';
 import { FC } from 'react';
+import type { SelectColSpanType } from './typing';
 
 const HsAdminSelect: FC<any> = (props: any) => {
   const filterOption: any = (
@@ -18,5 +19,6 @@ const HsAdminSelect: FC<any> = (props: any) => {
   );
 };
 
+export type { SelectColSpanType };
 export { HsAdminSelect };
 export default HsAdminSelect;

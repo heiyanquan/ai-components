@@ -1,5 +1,6 @@
 import { Input } from 'antd';
 import { FC } from 'react';
+import type { InputColSpanType } from './typing';
 
 const HsAdminInput: FC<any> = (props: any) => {
   const { TextArea, Search, Password, ...rest } = props;
@@ -36,5 +37,6 @@ const HsAdminInput: FC<any> = (props: any) => {
   }
 };
 
+export type { InputColSpanType };
 export { HsAdminInput };
 export default HsAdminInput;
