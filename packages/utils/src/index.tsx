@@ -6,3 +6,4 @@ export * from './storage';
 export * from './table';
 export * from './tools';
 export * from './typing';
+export * from './usePageChange';
