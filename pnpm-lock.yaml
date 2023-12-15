@@ -147,7 +147,7 @@ importers:
         specifier: ^0.0.8
         version: link:../select
       '@hs-react-admin/pro-spin':
-        specifier: ^0.0.1
+        specifier: ^0.0.2
         version: link:../spin
       '@hs-react-admin/pro-table':
         specifier: ^0.0.2
