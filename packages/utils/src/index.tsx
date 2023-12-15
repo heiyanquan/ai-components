@@ -1,6 +1,8 @@
 export * from './area';
 export { default as AsyncQueue } from './asyncQueue';
 export * from './constant';
+export * from './StaticMethod';
+export { default as StaticMethod } from './StaticMethod';
 export * from './getUrlSearchParams';
 export * from './storage';
 export * from './table';
