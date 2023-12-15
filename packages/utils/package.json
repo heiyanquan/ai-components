@@ -1,6 +1,6 @@
 {
   "name": "@hs-react-admin/pro-utils",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "@hs-react-admin/pro-utils",
   "license": "MIT",
   "sideEffects": false,
