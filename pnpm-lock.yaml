@@ -140,17 +140,26 @@ importers:
       '@hs-react-admin/pro-input':
         specifier: ^0.0.9
         version: link:../input
+      '@hs-react-admin/pro-page':
+        specifier: ^0.0.1
+        version: link:../page
       '@hs-react-admin/pro-select':
         specifier: ^0.0.8
         version: link:../select
       '@hs-react-admin/pro-table':
-        specifier: ^0.0.1
+        specifier: ^0.0.2
         version: link:../table
       '@hs-react-admin/pro-utils':
-        specifier: ^0.0.9
+        specifier: ^0.0.10
         version: link:../utils
 
   packages/input:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.18.0
+        version: 7.23.6
+
+  packages/page:
     dependencies:
       '@babel/runtime':
         specifier: ^7.18.0
@@ -168,7 +177,7 @@ importers:
         specifier: ^7.18.0
         version: 7.23.6
       '@hs-react-admin/pro-utils':
-        specifier: ^0.0.9
+        specifier: ^0.0.10
         version: link:../utils
 
   packages/utils:

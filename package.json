@@ -16,6 +16,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "node ./scripts/bootstrap.js",
     "build": "npm run version && npm run build-components",
     "build-components": "pnpm --filter '@hs-react-admin/**' build",
     "build:docs": "dumi build",
