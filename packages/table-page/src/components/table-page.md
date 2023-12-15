@@ -1,9 +1,8 @@
 ---
-title: HsAdminTable - 表格
+title: HsAdminTablePage - 表格+分页
 ---
 
-# HsAdminTable
- - 表格
+# HsAdminTablePage - 表格+分页
 
 ## 代码演示
 

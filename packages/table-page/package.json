@@ -1,17 +1,16 @@
 {
-  "name": "@hs-react-admin/pro-components",
-  "version": "0.0.20",
-  "description": "@hs-react-admin/pro-components",
+  "name": "@hs-react-admin/pro-table-page",
+  "version": "0.0.2",
+  "description": "@hs-react-admin/pro-table-page",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
-  "unpkg": "dist/components.min.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
-    "dist",
     "lib",
-    "es"
+    "es",
+    "dist"
   ],
   "scripts": {
     "build": "father build"
@@ -24,12 +23,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-input": "^0.0.9",
     "@hs-react-admin/pro-page": "^0.0.2",
-    "@hs-react-admin/pro-select": "^0.0.8",
-    "@hs-react-admin/pro-table": "^0.0.2",
-    "@hs-react-admin/pro-table-page": "^0.0.2",
-    "@hs-react-admin/pro-utils": "^0.0.10"
+    "@hs-react-admin/pro-table": "^0.0.2"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
