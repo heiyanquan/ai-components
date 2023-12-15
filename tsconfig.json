@@ -16,6 +16,8 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@hs-react-admin/pro-components": ["./packages/components/src/index.tsx"],
+      "@hs-react-admin/input": ["./packages/input/src/index.tsx"],
+      "@hs-react-admin/select": ["./packages/select/src/index.tsx"],
       "@hs-react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
     },
     "ignoreDeprecations": "5.0"
