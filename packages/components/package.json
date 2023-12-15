@@ -1,6 +1,6 @@
 {
   "name": "@hs-react-admin/pro-components",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "@hs-react-admin/pro-components",
   "license": "MIT",
   "sideEffects": false,
@@ -26,7 +26,7 @@
     "@babel/runtime": "^7.18.0",
     "@hs-react-admin/pro-input": "^0.0.6",
     "@hs-react-admin/pro-select": "^0.0.5",
-    "@hs-react-admin/pro-utils": "^0.0.6"
+    "@hs-react-admin/pro-utils": "^0.0.7"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
