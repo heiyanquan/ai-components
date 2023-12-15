@@ -125,6 +125,7 @@ async function release() {
           isNext ? 'with next tag' : ''
         }`,
       );
+      console.log('[ 11 ] >', 11)
       // 默认设置为 tag 检查通过之后在设置为 latest
       let cliArgs = isNext
         ? ['publish', '--tag', 'next']
