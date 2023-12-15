@@ -13,5 +13,3 @@ title: HsAdminInput - 输入框
 ### TextArea
 
 <code src="../demos/textarea.tsx"  background="var(--main-bg-color)" oldtitle="TextArea"></code>
-
-
