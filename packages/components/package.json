@@ -1,6 +1,6 @@
 {
   "name": "@hs-react-admin/pro-components",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "@hs-react-admin/pro-components",
   "license": "MIT",
   "sideEffects": false,
@@ -28,7 +28,7 @@
     "@hs-react-admin/pro-page": "^0.0.2",
     "@hs-react-admin/pro-select": "^0.0.8",
     "@hs-react-admin/pro-table": "^0.0.2",
-    "@hs-react-admin/pro-table-page": "^0.0.2",
+    "@hs-react-admin/pro-table-page": "^0.0.3",
     "@hs-react-admin/pro-utils": "^0.0.10"
   },
   "peerDependencies": {
