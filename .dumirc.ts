@@ -58,10 +58,10 @@ export default defineConfig({
               title: 'table-page - 表格+分页',
               link: '/components/table-page',
             },
-            // {
-            //   title: 'upload - 上传',
-            //   link: '/components/upload',
-            // },
+            {
+              title: 'upload - 上传',
+              link: '/components/upload',
+            },
           ],
         },
       ],

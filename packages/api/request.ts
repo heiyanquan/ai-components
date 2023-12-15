@@ -1,12 +1,14 @@
 import { getItem, setItem, TOKEN } from '@hs-react-admin/pro-utils';
 import { message } from 'antd';
 import { newAxiosRequest } from './axiosRequest';
+import { login } from './login';
 
 const commonConfig = {
-  loginUrl: '/api/datashop/v3/auth/oauth/hs/login',
+  loginUrl: '/api/users/v1/auth/token',
   refreshTokenUrl: {
+    login,
     axiosConfig: {
-      url: `https://datashop.aihuoshi.net/api/datashop/v3/auth/refresh-token`,
+      url: `https://analysis.aihuoshi.net/api/users/v1/auth/token`,
       method: 'post',
     },
     setToken: (res: { access_token: string; token_type: string }) =>
@@ -21,5 +23,9 @@ const { mainAxios: businessAxios } = newAxiosRequest({
   ...commonConfig,
   baseUrl: `https://analysis.aihuoshi.net`,
 });
+const { mainAxios: datashopAxios } = newAxiosRequest({
+  ...commonConfig,
+  baseUrl: `https://datashop.aihuoshi.net`,
+});
 
-export { businessAxios };
+export { businessAxios, datashopAxios };
