@@ -6,7 +6,7 @@ const commonConfig = {
   loginUrl: '/api/datashop/v3/auth/oauth/hs/login',
   refreshTokenUrl: {
     axiosConfig: {
-      url: `https://analysis.aihuoshi.net/api/datashop/v3/auth/refresh-token`,
+      url: `https://datashop.aihuoshi.net/api/datashop/v3/auth/refresh-token`,
       method: 'post',
     },
     setToken: (res: { access_token: string; token_type: string }) =>

@@ -1,4 +1,4 @@
-import { message } from '@hs-admin/utils'
+import { message } from '@hs-react-admin/pro-utils';
 import type { AxiosRequestConfig, Canceler } from 'axios'
 import axios from 'axios'
 
