@@ -138,13 +138,16 @@ importers:
         specifier: ^7.18.0
         version: 7.23.6
       '@hs-react-admin/pro-input':
-        specifier: ^0.0.4
+        specifier: ^0.0.9
         version: link:../input
       '@hs-react-admin/pro-select':
-        specifier: ^0.0.4
+        specifier: ^0.0.8
         version: link:../select
+      '@hs-react-admin/pro-table':
+        specifier: ^0.0.1
+        version: link:../table
       '@hs-react-admin/pro-utils':
-        specifier: ^0.0.4
+        specifier: ^0.0.9
         version: link:../utils
 
   packages/input:
@@ -158,6 +161,15 @@ importers:
       '@babel/runtime':
         specifier: ^7.18.0
         version: 7.23.6
+
+  packages/table:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.18.0
+        version: 7.23.6
+      '@hs-react-admin/pro-utils':
+        specifier: ^0.0.9
+        version: link:../utils
 
   packages/utils:
     dependencies:
@@ -3700,7 +3712,7 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
       hoist-non-react-statics: 3.3.2
       react: 18.1.0
       react-is: 16.13.1
@@ -3712,7 +3724,7 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
       react-is: 16.13.1
@@ -5160,7 +5172,7 @@ packages:
   /@umijs/history@5.3.1:
     resolution: {integrity: sha512-/e0cEGrR2bIWQD7pRl3dl9dcyRGeC9hoW0OCvUTT/hjY0EfUrkd6G8ZanVghPMpDuY5usxq9GVcvrT8KNXLWvA==}
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
       query-string: 6.14.1
     dev: true
 
@@ -7648,6 +7660,7 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /csso@4.2.0:
@@ -10454,7 +10467,7 @@ packages:
   /history@5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
     dev: true
 
   /hmac-drbg@1.0.1:
@@ -15825,7 +15838,7 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 18.1.0
@@ -15840,7 +15853,7 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.6
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 18.2.0

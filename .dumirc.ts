@@ -42,6 +42,10 @@ export default defineConfig({
               title: 'select - 选择器',
               link: '/components/select',
             },
+            {
+              title: 'table - 表格',
+              link: '/components/table',
+            },
           ],
         },
       ],
