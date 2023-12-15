@@ -48,7 +48,7 @@ $ pnpm test --coverage
 ## Release
 
 ```bash
-$ npm run release --tag=latest
+$ npm run release -- --tag=latest
 $ npm run release
 $ npm run release -- --publish-only
 $ npm run release -- --skip-git-status-check
