@@ -1,5 +1,5 @@
 import { Input } from 'antd';
-import { FC, memo } from 'react';
+import { FC } from 'react';
 
 const HsAdminInput: FC<any> = (props: any) => {
   const { TextArea, Search, Password, ...rest } = props;
@@ -36,4 +36,5 @@ const HsAdminInput: FC<any> = (props: any) => {
   }
 };
 
-export default memo(HsAdminInput);
+export { HsAdminInput };
+export default HsAdminInput;

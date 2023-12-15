@@ -1,7 +1,7 @@
 import { Select } from 'antd';
-import { memo } from 'react';
+import { FC } from 'react';
 
-const HsAdminSelect = (props: any) => {
+const HsAdminSelect: FC<any> = (props: any) => {
   const filterOption: any = (
     input: string,
     option: { label: string; value: string },
@@ -18,4 +18,5 @@ const HsAdminSelect = (props: any) => {
   );
 };
 
-export default memo(HsAdminSelect);
+export { HsAdminSelect };
+export default HsAdminSelect;

@@ -1,3 +1,4 @@
-export { default as HsAdminInput } from '@hs-react-admin/pro-input';
-export { default as HsAdminSelect } from '@hs-react-admin/pro-select';
-export const EMPTY_TEXT = '--';
+export * from '@hs-react-admin/pro-input';
+export * from '@hs-react-admin/pro-select';
+// @ts-ignore
+export * from './version';
