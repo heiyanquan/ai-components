@@ -64,6 +64,15 @@ export default defineConfig({
             },
           ],
         },
+        {
+          title: '工具方法',
+          children: [
+            {
+              title: 'utils - 工具方法',
+              link: '/components/utils',
+            },
+          ],
+        },
       ],
     },
   },

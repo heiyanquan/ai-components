@@ -2,9 +2,7 @@
 title: HsAdminTable - 表格
 ---
 
-# HsAdminTable
-
-- 表格
+# HsAdminTable - 表格
 
 ## 代码演示
 

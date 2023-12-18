@@ -18,6 +18,7 @@ export const login = (): Promise<any> => {
     data: formData,
   }).then((res) => {
     setItem(TOKEN, res.access_token);
+    return res
   });
 };
 // 当前用户详情
