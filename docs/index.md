@@ -3,7 +3,7 @@ hero:
   title: hs-react-admin
   description: 一个React管理后台组件库
   actions:
-    - text: 指南
+    - text: 文档
       link: /docs
     - text: 组件库
       link: /components/input
