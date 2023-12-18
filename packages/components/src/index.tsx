@@ -5,6 +5,7 @@ export * from '@react-admin/pro-table';
 export * from '@react-admin/pro-page';
 export * from '@react-admin/pro-table-page';
 export * from '@react-admin/pro-upload';
+export * from '@react-admin/pro-form';
 
 // @ts-ignore
 export * from './version';

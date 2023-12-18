@@ -62,6 +62,10 @@ export default defineConfig({
               title: 'upload - 上传',
               link: '/components/upload',
             },
+            {
+              title: 'form - 表单',
+              link: '/components/form',
+            },
           ],
         },
         {

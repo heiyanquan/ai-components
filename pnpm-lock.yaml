@@ -90,7 +90,7 @@ importers:
   packages/api:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.10
+      '@react-admin/pro-utils': ^0.0.11
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-utils': link:../utils
@@ -98,16 +98,18 @@ importers:
   packages/components:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-input': ^0.0.9
-      '@react-admin/pro-page': ^0.0.2
-      '@react-admin/pro-select': ^0.0.8
-      '@react-admin/pro-spin': ^0.0.3
-      '@react-admin/pro-table': ^0.0.2
-      '@react-admin/pro-table-page': ^0.0.3
-      '@react-admin/pro-upload': ^0.0.2
-      '@react-admin/pro-utils': ^0.0.10
+      '@react-admin/pro-form': ^0.0.1
+      '@react-admin/pro-input': ^0.0.10
+      '@react-admin/pro-page': ^0.0.3
+      '@react-admin/pro-select': ^0.0.9
+      '@react-admin/pro-spin': ^0.0.4
+      '@react-admin/pro-table': ^0.0.3
+      '@react-admin/pro-table-page': ^0.0.4
+      '@react-admin/pro-upload': ^0.0.3
+      '@react-admin/pro-utils': ^0.0.11
     dependencies:
       '@babel/runtime': 7.23.6
+      '@react-admin/pro-form': link:../form
       '@react-admin/pro-input': link:../input
       '@react-admin/pro-page': link:../page
       '@react-admin/pro-select': link:../select
@@ -116,6 +118,16 @@ importers:
       '@react-admin/pro-table-page': link:../table-page
       '@react-admin/pro-upload': link:../upload
       '@react-admin/pro-utils': link:../utils
+
+  packages/form:
+    specifiers:
+      '@babel/runtime': ^7.18.0
+      '@react-admin/pro-input': ^0.0.10
+      '@react-admin/pro-select': ^0.0.9
+    dependencies:
+      '@babel/runtime': 7.23.6
+      '@react-admin/pro-input': link:../input
+      '@react-admin/pro-select': link:../select
 
   packages/input:
     specifiers:
@@ -144,7 +156,7 @@ importers:
   packages/table:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.10
+      '@react-admin/pro-utils': ^0.0.11
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-utils': link:../utils
@@ -152,8 +164,8 @@ importers:
   packages/table-page:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-page': ^0.0.2
-      '@react-admin/pro-table': ^0.0.2
+      '@react-admin/pro-page': ^0.0.3
+      '@react-admin/pro-table': ^0.0.3
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-page': link:../page
@@ -163,7 +175,7 @@ importers:
     specifiers:
       '@ant-design/icons': ^5.2.6
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.10
+      '@react-admin/pro-utils': ^0.0.11
     dependencies:
       '@ant-design/icons': 5.2.6
       '@babel/runtime': 7.23.6

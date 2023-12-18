@@ -1,6 +1,7 @@
 export const version = {
   "@hs-admin/api": "0.0.3",
   "@react-admin/pro-components": "0.0.25",
+  "@react-admin/pro-form": "0.0.1",
   "@react-admin/pro-input": "0.0.10",
   "@react-admin/pro-page": "0.0.3",
   "@react-admin/pro-select": "0.0.9",
