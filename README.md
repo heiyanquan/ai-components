@@ -1,6 +1,5 @@
 # react-admin
 
-
 ```bash
 # install dependencies
 $ pnpm install
