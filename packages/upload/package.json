@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-upload",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@react-admin/pro-upload",
   "license": "MIT",
   "sideEffects": false,
@@ -24,7 +24,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@babel/runtime": "^7.18.0",
-    "@react-admin/pro-utils": "^0.0.10"
+    "@react-admin/pro-utils": "^0.0.11"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",

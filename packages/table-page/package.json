@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-table-page",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@react-admin/pro-table-page",
   "license": "MIT",
   "sideEffects": false,
@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@react-admin/pro-page": "^0.0.2",
-    "@react-admin/pro-table": "^0.0.2"
+    "@react-admin/pro-page": "^0.0.3",
+    "@react-admin/pro-table": "^0.0.3"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
