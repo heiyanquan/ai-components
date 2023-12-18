@@ -77,7 +77,6 @@ async function release() {
 
     const major = args.major ? ['major'] : [];
     const minor = args.minor ? ['minor'] : [];
-    console.log('[ lernaCli ] >', lernaCli);
     await exec(
       'node',
       [
@@ -101,11 +100,9 @@ async function release() {
   // Umi must be the latest.
   let pkgs = args.publishOnly ? getPackages() : updated;
   pkgs = pkgs.filter((item) => item !== 'api');
-  console.log('[ pkgs ] >', pkgs);
   logStep(`publish packages: ${chalk.blue(pkgs.join(', '))}`);
   const publishList = pkgs.map((pkg, index) => {
     const pkgPath = join(cwd, 'packages', pkg.replace('pro-', ''));
-    console.log('[ pkgPath ] >', pkgPath);
     const { name, version } = require(join(pkgPath, 'package.json'));
     const isNext = isNextVersion(version);
     let isPackageExist = null;
