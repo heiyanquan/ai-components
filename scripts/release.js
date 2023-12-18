@@ -99,7 +99,8 @@ async function release() {
 
   // Publish
   // Umi must be the latest.
-  const pkgs = args.publishOnly ? getPackages() : updated;
+  let pkgs = args.publishOnly ? getPackages() : updated;
+  pkgs = pkgs.filter((item) => item !== 'api');
   console.log('[ pkgs ] >', pkgs);
   logStep(`publish packages: ${chalk.blue(pkgs.join(', '))}`);
   const publishList = pkgs.map((pkg, index) => {
