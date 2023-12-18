@@ -8,7 +8,7 @@ const HsAdminSpin: FC<any> = (props: any) => {
     left: '50%',
     top: '50%',
     transform: 'translate(-50%, -50%)',
-    zIndex: '9999',
+    zIndex: '999',
   };
   return <Spin style={style} size="large" {...props} />;
 };
