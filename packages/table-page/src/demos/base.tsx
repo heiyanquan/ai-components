@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HsAdminTablePage } from '@hs-react-admin/pro-components';
+import { HsAdminTablePage } from '@react-admin/pro-components';
 import { Space, Tag } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 

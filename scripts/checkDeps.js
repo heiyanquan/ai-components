@@ -58,7 +58,7 @@ const checkDepsByAst = (ast, filePath) => {
           if (!importPath.startsWith('.') && path.node.importKind !== 'type') {
             const packagePath = slash(filePath.split(posix.sep).splice(0, 2).join(posix.sep));
             try {
-              if (importPath.includes('@hs-react-admin/pro')) return;
+              if (importPath.includes('@react-admin/pro')) return;
               // 检查包在不在
               require.resolve(importPath, {
                 paths: [slash(join(__dirname, '..', packagePath))],

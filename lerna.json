@@ -3,7 +3,7 @@
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "changelog": {
-    "repo": "hs-react-admin/pro-components",
+    "repo": "react-admin/pro-components",
     "cacheDir": ".changelog"
   },
   "ignoreChanges": [

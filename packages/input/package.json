@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-input",
+  "name": "@react-admin/pro-input",
   "version": "0.0.9",
-  "description": "@hs-react-admin/pro-input",
+  "description": "@react-admin/pro-input",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",

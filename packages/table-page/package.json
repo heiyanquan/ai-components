@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-table-page",
+  "name": "@react-admin/pro-table-page",
   "version": "0.0.3",
-  "description": "@hs-react-admin/pro-table-page",
+  "description": "@react-admin/pro-table-page",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-page": "^0.0.2",
-    "@hs-react-admin/pro-table": "^0.0.2"
+    "@react-admin/pro-page": "^0.0.2",
+    "@react-admin/pro-table": "^0.0.2"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",

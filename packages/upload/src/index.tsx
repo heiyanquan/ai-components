@@ -2,7 +2,7 @@ import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { Button, message, Modal, Upload } from 'antd';
 import type { UploadFile, UploadProps } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import { getItem } from '@hs-react-admin/pro-utils';
+import { getItem } from '@react-admin/pro-utils';
 import type { UploadColSpanType } from './typing';
 
 type IdsType = number[] | string | number;

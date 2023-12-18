@@ -1,4 +1,4 @@
-import { TOKEN, setItem } from '@hs-react-admin/pro-utils';
+import { TOKEN, setItem } from '@react-admin/pro-utils';
 import { businessAxios } from './request';
 
 /**

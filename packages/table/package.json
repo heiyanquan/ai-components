@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-table",
+  "name": "@react-admin/pro-table",
   "version": "0.0.2",
-  "description": "@hs-react-admin/pro-table",
+  "description": "@react-admin/pro-table",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-utils": "^0.0.10"
+    "@react-admin/pro-utils": "^0.0.10"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",

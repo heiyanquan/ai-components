@@ -15,10 +15,10 @@
     "resolveJsonModule": true,
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@hs-react-admin/pro-components": ["./packages/components/src/index.tsx"],
-      "@hs-react-admin/input": ["./packages/input/src/index.tsx"],
-      "@hs-react-admin/select": ["./packages/select/src/index.tsx"],
-      "@hs-react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
+      "@react-admin/pro-components": ["./packages/components/src/index.tsx"],
+      "@react-admin/input": ["./packages/input/src/index.tsx"],
+      "@react-admin/select": ["./packages/select/src/index.tsx"],
+      "@react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
     },
     "ignoreDeprecations": "5.0"
   },

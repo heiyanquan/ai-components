@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-spin",
+  "name": "@react-admin/pro-spin",
   "version": "0.0.3",
-  "description": "@hs-react-admin/pro-spin",
+  "description": "@react-admin/pro-spin",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",

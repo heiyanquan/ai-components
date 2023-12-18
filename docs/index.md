@@ -1,6 +1,6 @@
 ---
 hero:
-  title: hs-react-admin
+  title: react-admin
   description: 一个React管理后台组件库
   actions:
     - text: 文档

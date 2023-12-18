@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import type { TablePageColSpanType } from './typing';
-import HsAdminTable from '@hs-react-admin/pro-table';
-import HsAdminPage from '@hs-react-admin/pro-page';
+import HsAdminTable from '@react-admin/pro-table';
+import HsAdminPage from '@react-admin/pro-page';
 
 const HsAdminTablePage: FC<any> = (props: any) => {
   const { pagination, ...rest } = props;

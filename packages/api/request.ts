@@ -1,4 +1,4 @@
-import { getItem, setItem, TOKEN } from '@hs-react-admin/pro-utils';
+import { getItem, setItem, TOKEN } from '@react-admin/pro-utils';
 import { message } from 'antd';
 import { newAxiosRequest } from './axiosRequest';
 import { login } from './login';

@@ -9,7 +9,7 @@ const pkgList = readdirSync(join(__dirname, 'packages')).filter(
 );
 
 const alias = pkgList.reduce((pre, pkg) => {
-  pre[`@hs-react-admin/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+  pre[`@react-admin/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src');
   return {
     ...pre,
   };
@@ -24,7 +24,7 @@ export default defineConfig({
     docDirs: ['docs', ...tailPkgList],
   },
   themeConfig: {
-    name: 'hs-react-admin',
+    name: 'react-admin',
     nav: [
       { title: '文档', link: '/docs' },
       { title: '组件', link: '/components' },

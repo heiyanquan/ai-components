@@ -4,7 +4,7 @@ import {
   hsHandleTableDate,
   hsHandleTableDateTime,
   hsHandleTableRender,
-} from '@hs-react-admin/pro-utils';
+} from '@react-admin/pro-utils';
 import type { TableColSpanType } from './typing';
 
 interface ColumnsType {

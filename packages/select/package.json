@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-select",
+  "name": "@react-admin/pro-select",
   "version": "0.0.8",
-  "description": "@hs-react-admin/pro-select",
+  "description": "@react-admin/pro-select",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",

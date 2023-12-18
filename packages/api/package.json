@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-utils": "^0.0.10"
+    "@react-admin/pro-utils": "^0.0.10"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",

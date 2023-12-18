@@ -4,7 +4,7 @@
   "description": "A react library developed with dumi",
   "license": "MIT",
   "main": "lib/index.js",
-  "unpkg": "dist/hs-react-admin.min.js",
+  "unpkg": "dist/react-admin.min.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
@@ -18,7 +18,7 @@
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
     "build": "npm run version && npm run build-components",
-    "build-components": "pnpm --filter '@hs-react-admin/**' build",
+    "build-components": "pnpm --filter '@react-admin/**' build",
     "build:docs": "dumi build",
     "build:watch": "father dev",
     "clear": "rimraf **/*/node_modules && rimraf node_modules",

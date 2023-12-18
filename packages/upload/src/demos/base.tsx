@@ -1,4 +1,4 @@
-import { HsAdminUpload } from '@hs-react-admin/pro-components';
+import { HsAdminUpload } from '@react-admin/pro-components';
 import { action } from './hooks';
 import { login } from '@hs-admin/api';
 import { useEffect } from 'react';

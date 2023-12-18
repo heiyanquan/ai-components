@@ -1,7 +1,7 @@
 {
-  "name": "@hs-react-admin/pro-components",
+  "name": "@react-admin/pro-components",
   "version": "0.0.24",
-  "description": "@hs-react-admin/pro-components",
+  "description": "@react-admin/pro-components",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -24,14 +24,14 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@hs-react-admin/pro-input": "^0.0.9",
-    "@hs-react-admin/pro-page": "^0.0.2",
-    "@hs-react-admin/pro-select": "^0.0.8",
-    "@hs-react-admin/pro-spin": "^0.0.3",
-    "@hs-react-admin/pro-table": "^0.0.2",
-    "@hs-react-admin/pro-table-page": "^0.0.3",
-    "@hs-react-admin/pro-upload": "^0.0.2",
-    "@hs-react-admin/pro-utils": "^0.0.10"
+    "@react-admin/pro-input": "^0.0.9",
+    "@react-admin/pro-page": "^0.0.2",
+    "@react-admin/pro-select": "^0.0.8",
+    "@react-admin/pro-spin": "^0.0.3",
+    "@react-admin/pro-table": "^0.0.2",
+    "@react-admin/pro-table-page": "^0.0.3",
+    "@react-admin/pro-upload": "^0.0.2",
+    "@react-admin/pro-utils": "^0.0.10"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
