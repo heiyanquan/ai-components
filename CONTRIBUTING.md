@@ -84,6 +84,4 @@ change the `authors` in package.json
 
 pnpm install @react-admin/utils -r --filter @react-admin/components pnpm up --filter @react-admin/utils @vitejs/plugin-vue -r --latest
 
-
 npm adduser --registry=http://nexus.aihuoshi.net/repository/npmjs-huoshi/
-
