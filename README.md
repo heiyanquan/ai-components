@@ -23,3 +23,9 @@ $ pnpm run doctor
 ## LICENSE
 
 MIT
+
+发布源： http://nexus.aihuoshi.net/repository/npmjs-huoshi/
+
+下载源： http://nexus.aihuoshi.net/repository/npmjs-proxy/
+
+账号：admin 密码：ObbXM5PyXhuR0SNG
