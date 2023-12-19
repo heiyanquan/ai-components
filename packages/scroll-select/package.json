@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-scroll-select",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@react-admin/pro-scroll-select",
   "license": "MIT",
   "sideEffects": false,
