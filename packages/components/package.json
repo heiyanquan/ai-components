@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-components",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "@react-admin/pro-components",
   "license": "MIT",
   "sideEffects": false,
@@ -32,7 +32,7 @@
     "@react-admin/pro-spin": "^0.0.5",
     "@react-admin/pro-table": "^0.0.4",
     "@react-admin/pro-table-page": "^0.0.5",
-    "@react-admin/pro-upload": "^0.0.4",
+    "@react-admin/pro-upload": "^0.0.5",
     "@react-admin/pro-utils": "^0.0.12"
   },
   "peerDependencies": {
