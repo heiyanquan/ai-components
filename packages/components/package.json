@@ -24,6 +24,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
+    "@react-admin/pro-codemirror": "^0.0.1",
     "@react-admin/pro-form": "^0.0.3",
     "@react-admin/pro-input": "^0.0.11",
     "@react-admin/pro-page": "^0.0.4",

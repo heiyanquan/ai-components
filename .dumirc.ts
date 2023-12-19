@@ -70,6 +70,10 @@ export default defineConfig({
               title: 'form - 表单',
               link: '/components/form',
             },
+            {
+              title: 'codemirror - 编辑器',
+              link: '/components/codemirror',
+            },
           ],
         },
         {
