@@ -101,8 +101,5 @@
     "lodash": ">=4.17.21",
     "react": ">=18.2.0"
   },
-  "publishConfig": {
-    "registry": "https://repo.aihuoshi.net/repository/npm-huoshi/"
-  },
   "authors": []
 }
