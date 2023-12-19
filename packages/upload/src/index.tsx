@@ -157,7 +157,7 @@ const HsAdminUpload: FC<Props> = (props: Props) => {
     }
     getFileInfoByIds({ ids: localIds }).then((res: any) => {
       setFileList(
-        res.map((item: any) => ({
+        (res || []).map((item: any) => ({
           ...item,
           percent: 100,
           status: 'done',
