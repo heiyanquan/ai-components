@@ -29,7 +29,6 @@
     "prepublishOnly": "father doctor && npm run build",
     "prettier": "prettier --write \"**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "release": "node ./scripts/release.js",
-    "release:old": "gulp --require @esbuild-kit/cjs-loader -f scripts/release.ts",
     "start": "npm run version && dumi dev",
     "version": "node ./scripts/gen_version.js"
   },
@@ -57,15 +56,13 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
-    "@esbuild-kit/cjs-loader": "^2.4.4",
     "@hs-admin/api": "workspace:*",
     "@types/classnames": "^2.3.1",
     "axios": "^1.6.2",
-    "consola": "^3.2.3",
     "dayjs": "^1.11.10",
-    "gulp": "^4.0.2",
     "immer": "^10.0.3",
     "lodash": "^4.17.21",
+    "react-router-dom": "^6.21.0",
     "use-immer": "^0.9.0"
   },
   "devDependencies": {
@@ -78,7 +75,7 @@
     "@umijs/fabric": "^4.0.1",
     "@umijs/lint": "^4.0.0",
     "@umijs/utils": "^4.0.89",
-    "antd": "^5.11.2",
+    "antd": "^5.12.2",
     "chalk": "^4.1.2",
     "cross-env": "^7.0.3",
     "dumi": "^2.2.13",
