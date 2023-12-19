@@ -33,7 +33,7 @@ const { yParser } = require('@umijs/utils');
           umi: '3.x',
         },
         publishConfig: {
-          registry: 'https://repo.aihuoshi.net/repository/npm-huoshi/',
+          registry: 'http://nexus.aihuoshi.net/repository/npmjs-huoshi/',
         },
       };
       if (pkgJSONExists) {

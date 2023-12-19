@@ -83,3 +83,7 @@ change the `authors` in package.json
 安装 npm install [npm-name]@beta #安装 beta 版 npm install [npm-name] #安装最新的稳定版，即 npm install [npm-name]@latest
 
 pnpm install @react-admin/utils -r --filter @react-admin/components pnpm up --filter @react-admin/utils @vitejs/plugin-vue -r --latest
+
+
+npm adduser --registry=http://nexus.aihuoshi.net/repository/npmjs-huoshi/
+

@@ -33,6 +33,6 @@
     "use-immer": "^0.9.0"
   },
   "publishConfig": {
-    "registry": "https://repo.aihuoshi.net/repository/npm-huoshi/"
+    "registry": "http://nexus.aihuoshi.net/repository/npmjs-huoshi/"
   }
 }
