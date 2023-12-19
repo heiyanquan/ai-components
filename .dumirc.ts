@@ -63,6 +63,10 @@ export default defineConfig({
               link: '/components/upload',
             },
             {
+              title: 'scroll-select - 下拉滚动',
+              link: '/components/scroll-select',
+            },
+            {
               title: 'form - 表单',
               link: '/components/form',
             },
