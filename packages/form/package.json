@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-form",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@react-admin/pro-form",
   "license": "MIT",
   "sideEffects": false,
@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@react-admin/pro-input": "^0.0.10",
-    "@react-admin/pro-select": "^0.0.9"
+    "@react-admin/pro-input": "^0.0.11",
+    "@react-admin/pro-select": "^0.0.10"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
