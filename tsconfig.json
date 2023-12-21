@@ -20,7 +20,8 @@
       "@react-admin/select": ["./packages/select/src/index.tsx"],
       "@react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
     },
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "module": "ES2022"
   },
   "include": [
     "./tests/setupTests.ts",

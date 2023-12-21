@@ -36,7 +36,8 @@
     "@codemirror/lang-vue": "^0.1.2",
     "@codemirror/language-data": "^6.3.1",
     "@uiw/codemirror-extensions-color": "^4.21.21",
-    "@uiw/react-codemirror": "^4.21.21"
+    "@uiw/react-codemirror": "^4.21.21",
+    "code-example": "^3.3.7"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",

@@ -1,44 +1,15 @@
 import { HsAdminCodemirror } from '@react-admin/pro-components';
-import { useState } from 'react';
-import { Select } from 'antd';
+import { SetStateAction, useState } from 'react';
 
 export default () => {
-  const [mode, setMode] = useState<string | undefined>(undefined);
-  const options = [
-    { label: 'javascript', value: 'javascript' },
-    { label: 'sql', value: 'sql' },
-    { label: 'json', value: 'json' },
-    { label: 'markdown', value: 'markdown' },
-    { label: 'python', value: 'python' },
-  ];
   const [code, setCode] = useState('');
 
-  const handleLangChange = (lang: string) => {
-    import(`code-example/txt/sample.${lang}.txt`).then((data) => {
-      setMode(lang);
-      fetch(data.default)
-        .then((res) => res.text())
-        .then((res) => {
-          setCode(res);
-        });
-    });
-  };
-  const codemirrorChange = (val, viewUpdate: any) => {
+  const codemirrorChange = (val: SetStateAction<string>, viewUpdate: any) => {
     console.log('CodeMirror: onChange', val, viewUpdate);
+    setCode(val);
   };
 
   return (
-    <>
-      <Select
-        value={mode}
-        options={options}
-        onChange={handleLangChange}
-        style={{ width: 240 }}
-        placeholder="请选择语言"
-      ></Select>
-      <br />
-      <br />
-      <HsAdminCodemirror value={code} height="300px" onChange={codemirrorChange} />
-    </>
+    <HsAdminCodemirror value={code} setValue={setCode} height="300px" onChange={codemirrorChange} />
   );
 };

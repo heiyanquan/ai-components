@@ -11,7 +11,7 @@ import { sql, MySQL, PostgreSQL } from '@codemirror/lang-sql';
 import { java } from '@codemirror/lang-java';
 import { vue } from '@codemirror/lang-vue';
 
-export const langs = {
+export const langs: any = {
   sass: () => sass(),
   javascript,
   jsx: () => javascript({ jsx: true }),
