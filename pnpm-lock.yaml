@@ -19,6 +19,7 @@ importers:
       antd: ^5.12.2
       axios: ^1.6.2
       chalk: ^4.1.2
+      code-example: ^3.3.7
       cross-env: ^7.0.3
       dayjs: ^1.11.10
       dumi: ^2.2.13
@@ -48,6 +49,7 @@ importers:
       '@types/classnames': 2.3.1
       antd: 5.12.2_biqbaboplfbrettd7655fr4n2y
       axios: 1.6.2
+      code-example: 3.3.7
       dayjs: 1.11.10
       immer: 10.0.3
       lodash: 4.17.21

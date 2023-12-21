@@ -1,14 +1,44 @@
 import { HsAdminCodemirror } from '@react-admin/pro-components';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { Select } from 'antd';
 
 export default () => {
-  const [allModuleTxt, setallModuleTxt] = useState<any>({});
+  const [mode, setMode] = useState<string | undefined>(undefined);
+  const options = [
+    { label: 'javascript', value: 'javascript' },
+    { label: 'sql', value: 'sql' },
+    { label: 'json', value: 'json' },
+    { label: 'markdown', value: 'markdown' },
+    { label: 'python', value: 'python' },
+  ];
+  const [code, setCode] = useState('');
 
-  useEffect(() => {
-    import('/node_modules/code-example/txt/sample.css.txt').then((res) => {
-      console.log('[ res ] >', res);
+  const handleLangChange = (lang: string) => {
+    import(`code-example/txt/sample.${lang}.txt`).then((data) => {
+      setMode(lang);
+      fetch(data.default)
+        .then((res) => res.text())
+        .then((res) => {
+          setCode(res);
+        });
     });
-    setallModuleTxt(modules);
-  }, []);
-  return <HsAdminCodemirror allModuleTxt={allModuleTxt} defaultValue="Hello dumi!" />;
+  };
+  const codemirrorChange = (val, viewUpdate: any) => {
+    console.log('CodeMirror: onChange', val, viewUpdate);
+  };
+
+  return (
+    <>
+      <Select
+        value={mode}
+        options={options}
+        onChange={handleLangChange}
+        style={{ width: 240 }}
+        placeholder="请选择语言"
+      ></Select>
+      <br />
+      <br />
+      <HsAdminCodemirror value={code} height="300px" onChange={codemirrorChange} />
+    </>
+  );
 };

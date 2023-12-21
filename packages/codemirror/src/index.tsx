@@ -1,47 +1,23 @@
-import { FC, SetStateAction, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
-import { Select } from 'antd';
+import type { LanguageName } from './typing';
 import { langs } from './typing';
 import { color } from '@uiw/codemirror-extensions-color';
-import type { LanguageName } from './typing';
 
 interface Props {
-  allModuleTxt: any;
+  lang: string;
 }
 const HsAdminCodemirror: FC<Props> = (props: Props) => {
-  const { allModuleTxt } = props;
-  const [code, setCode] = useState('');
-  const [mode, setMode] = useState<string>('');
-  const options = [
-    { label: 'javascript', value: 'javascript' },
-    { label: 'sql', value: 'sql' },
-    { label: 'json', value: 'json' },
-    { label: 'markdown', value: 'markdown' },
-    { label: 'python', value: 'python' },
-  ];
+  const { lang } = props;
   const [extensions, setExtensions] = useState<any[]>();
 
-  function handleLangChange(lang: keyof typeof langs) {
-    for (const path in allModuleTxt) {
-      if (path.includes(lang)) {
-        setCode(allModuleTxt[path]);
-        if (langs[lang]) {
-          setExtensions([color, langs[lang]()]);
-        }
-        setMode(lang);
-      }
+  useEffect(() => {
+    if (langs[lang]) {
+      setExtensions([color, langs[lang]()]);
     }
-  }
-  const onChange = (val: SetStateAction<string>, viewUpdate: any) => {
-    console.log('CodeMirror: onChange', val, viewUpdate);
-  };
+  }, [lang]);
 
-  return (
-    <>
-      <Select value={mode} options={options} onChange={handleLangChange}></Select>
-      <CodeMirror value={code} height="600px" extensions={extensions} onChange={onChange} />
-    </>
-  );
+  return <CodeMirror extensions={extensions} {...props} />;
 };
 
 export type { LanguageName };
