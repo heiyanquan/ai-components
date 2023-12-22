@@ -51,7 +51,7 @@ export interface Props {
   // 每个FormItem里面的表单相关配置参数
   formItemOptions: Options[];
   // 插槽子节点
-  children?: any[];
+  children?: any[] | any;
 }
 
 const HsAdminForm: FC<Props> = (props: Props) => {
