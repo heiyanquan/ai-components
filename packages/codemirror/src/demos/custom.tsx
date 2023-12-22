@@ -38,7 +38,7 @@ export default () => {
       ></Select>
       <br />
       <br />
-      <HsAdminBaseCodemirror value={code} height="300px" onChange={codemirrorChange} />
+      <HsAdminBaseCodemirror value={code} lang={mode} height="300px" onChange={codemirrorChange} />
     </>
   );
 };

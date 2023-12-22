@@ -20,15 +20,20 @@ const HsAdminCodemirror: FC<Props> = (props: Props) => {
   ];
 
   const handleLangChange = (lang: string) => {
-    import(`code-example/txt/sample.${lang}.txt`).then((data) => {
-      setMode(lang);
-      fetch(data.default)
-        .then((res) => res.text())
-        .then((res) => {
-          setValue(res);
-          onLangChange?.(lang);
-        });
-    });
+    setMode(lang);
+    // webpack环境
+    if (typeof process !== 'undefined') {
+      import(`code-example/txt/sample.${lang}.txt`).then((data) => {
+        fetch(data.default)
+          .then((res) => res.text())
+          .then((res) => {
+            setValue(res);
+            onLangChange?.(lang);
+          });
+      });
+    } else {
+      onLangChange?.(lang);
+    }
   };
 
   return (
@@ -43,7 +48,7 @@ const HsAdminCodemirror: FC<Props> = (props: Props) => {
       ></Select>
       <br />
       <br />
-      <HsAdminBaseCodemirror value={value} height="300px" {...rest} />
+      <HsAdminBaseCodemirror value={value} lang={mode} height="300px" {...rest} />
     </>
   );
 };
