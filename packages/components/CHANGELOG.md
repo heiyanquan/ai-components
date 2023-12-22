@@ -1,6 +1,15 @@
 # Change Log
 
-All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.0.32](https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/compare/@react-admin/pro-components@0.0.31...@react-admin/pro-components@0.0.32) (2023-12-22)
+
+**Note:** Version bump only for package @react-admin/pro-components
+
+
+
+
 
 ## [0.0.31](https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/compare/@react-admin/pro-components@0.0.30...@react-admin/pro-components@0.0.31) (2023-12-22)
 

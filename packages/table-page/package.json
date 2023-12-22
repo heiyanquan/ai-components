@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-table-page",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "@react-admin/pro-table-page",
   "license": "MIT",
   "sideEffects": false,
