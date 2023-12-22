@@ -6,7 +6,7 @@ hero:
     - text: 文档
       link: /docs
     - text: 组件库
-      link: /components/input
+      link: /components/spin
 features:
   - title: Ant Design
     emoji: 💎

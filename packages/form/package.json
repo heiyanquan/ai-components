@@ -22,9 +22,7 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.18.0",
-    "@react-admin/pro-input": "^0.0.11",
-    "@react-admin/pro-select": "^0.0.10"
+    "@babel/runtime": "^7.18.0"
   },
   "peerDependencies": {
     "antd": ">=5.11.2",
