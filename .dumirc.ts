@@ -47,14 +47,6 @@ export default defineConfig({
               link: '/components/spin',
             },
             {
-              title: 'table - 表格',
-              link: '/components/table',
-            },
-            {
-              title: 'page - 分页',
-              link: '/components/page',
-            },
-            {
               title: 'table-page - 表格+分页',
               link: '/components/table-page',
             },

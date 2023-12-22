@@ -15,9 +15,15 @@
     "resolveJsonModule": true,
     "paths": {
       "@@/*": [".dumi/tmp/*"],
+      "@react-admin/pro-codemirror": ["./packages/codemirror/src/index.tsx"],
       "@react-admin/pro-components": ["./packages/components/src/index.tsx"],
+      "@react-admin/pro-form": ["./packages/form/src/index.tsx"],
       "@react-admin/input": ["./packages/input/src/index.tsx"],
+      "@react-admin/scroll-select": ["./packages/scroll-select/src/index.tsx"],
       "@react-admin/select": ["./packages/select/src/index.tsx"],
+      "@react-admin/spin": ["./packages/spin/src/index.tsx"],
+      "@react-admin/table-page": ["./packages/table-page/src/index.tsx"],
+      "@react-admin/upload": ["./packages/upload/src/index.tsx"],
       "@react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
     },
     "ignoreDeprecations": "5.0",
