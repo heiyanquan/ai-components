@@ -13,6 +13,7 @@ import {
   TimePicker,
   Transfer,
   TreeSelect,
+  FormProps,
 } from 'antd';
 
 import HsAdminInput from './input';
@@ -43,7 +44,7 @@ export interface Options {
   // FormItem配置参数，同antd文档
   FormItemProps?: any;
 }
-export interface Props {
+export interface Props extends FormProps {
   // 除了formItemOptions、rowProps、children以外剩余参数均为Form Props配置参数，同antd文档
   rest?: any;
   // Row Props配置参数，同antd文档
@@ -51,7 +52,7 @@ export interface Props {
   // 每个FormItem里面的表单相关配置参数
   formItemOptions: Options[];
   // 插槽子节点
-  children?: any[] | any;
+  children?: any | any[];
 }
 
 const HsAdminForm: FC<Props> = (props: Props) => {
