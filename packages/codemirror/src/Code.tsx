@@ -48,7 +48,7 @@ const HsAdminCodemirror: FC<Props> = (props: Props) => {
       ></Select>
       <br />
       <br />
-      <HsAdminBaseCodemirror value={value} lang={mode} height="300px" {...rest} />
+      <HsAdminBaseCodemirror value={value} lang={mode} {...rest} />
     </>
   );
 };

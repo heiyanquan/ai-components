@@ -14,6 +14,7 @@ export default () => {
   const [code, setCode] = useState('');
 
   const handleLangChange = (lang: string) => {
+    // vite环境请自行处理默认值赋值逻辑
     import(`code-example/txt/sample.${lang}.txt`).then((data) => {
       setMode(lang);
       fetch(data.default)

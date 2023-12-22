@@ -1,7 +1,7 @@
 export const version = {
   "@hs-admin/api": "0.0.6",
-  "@react-admin/pro-codemirror": "0.0.2",
-  "@react-admin/pro-components": "0.0.30",
+  "@react-admin/pro-codemirror": "0.0.3",
+  "@react-admin/pro-components": "0.0.31",
   "@react-admin/pro-form": "0.0.3",
   "@react-admin/pro-input": "0.0.11",
   "@react-admin/pro-page": "0.0.4",
