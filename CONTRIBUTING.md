@@ -33,29 +33,29 @@ $ PACKAGE=plugin-antd pnpm build --watch
 Run test.
 
 ```bash
-$ pnpm test
+pnpm test
 
 # Test specified file and watch
-$ pnpm test getMockData.test.js -w
+pnpm test getMockData.test.js -w
 
 # Test specified package
-$ pnpm test --package core
+pnpm test --package core
 
 # Generate coverage
-$ pnpm test --coverage
+pnpm test --coverage
 ```
 
 ## Release
 
 ```bash
-$ pnpm --filter '@react-admin/**' build
-$ npm run release -- --tag=latest
-$ npm run release
-$ npm run release -- --publish-only
-$ npm run release -- --skip-git-status-check
-$ npm run release -- --skip-build
-$ npm run release -- --conventional-graduate
-$ npm run release -- --conventional-graduate preset-react,plugin-dva
+pnpm --filter '@react-admin/**' build
+npm run release -- --tag=latest
+npm run release
+npm run release -- --publish-only
+npm run release -- --skip-git-status-check
+npm run release -- --skip-build
+npm run release -- --conventional-graduate
+npm run release -- --conventional-graduate preset-react,plugin-dva
 ```
 
 ## Create new package
