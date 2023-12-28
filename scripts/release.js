@@ -71,10 +71,10 @@ async function release() {
       ? ['--conventional-prerelease'].concat(Array.isArray(args.conventionalPrerelease) ? args.conventionalPrerelease.join(',') : [])
       : []
 
-    const major = args.major
-    const minor = args.minor
+    const major = args.major ? 'major' : ''
+    const minor = args.minor ? 'minor' : ''
     try {
-      await execa('lerna', ['version', 'patch'], {
+      await execa('lerna', ['version', major || minor || 'patch'], {
         stdio: 'inherit'
       })
     } catch (error) {
