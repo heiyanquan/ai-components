@@ -1,6 +1,6 @@
 import { spawn } from 'child_process'
 
-module.exports = function exec(command, args, opts) {
+function exec(command, args, opts) {
   return new Promise((resolve, reject) => {
     const child = spawn(command, args, {
       shell: true,
@@ -21,3 +21,5 @@ module.exports = function exec(command, args, opts) {
     });
   });
 };
+
+export default exec
