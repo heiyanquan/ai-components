@@ -27,7 +27,7 @@ async function release() {
   // Check npm registry
   logStep('check npm registry')
   const userRegistry = await execa('npm', ['config', 'get', 'registry'], {})
-  if (userRegistry.includes('https://registry.yarnpkg.com/')) {
+  if (userRegistry.stdout.includes('https://registry.yarnpkg.com/')) {
     printErrorAndExit(`Release failed, please use ${chalk.blue('npm run release')}.`)
   }
 
