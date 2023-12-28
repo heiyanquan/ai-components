@@ -1,4 +1,4 @@
-import { HsAdminSelect } from '@react-admin/pro-components';
+import { HsAdminSelect } from '@react-admin/pro-components'
 
 export default () => (
   <HsAdminSelect
@@ -8,7 +8,7 @@ export default () => (
       { value: 'jack', label: 'Jack' },
       { value: 'lucy', label: 'Lucy' },
       { value: 'Yiminghe', label: 'yiminghe' },
-      { value: 'disabled', label: 'Disabled', disabled: true },
+      { value: 'disabled', label: 'Disabled', disabled: true }
     ]}
   />
-);
+)

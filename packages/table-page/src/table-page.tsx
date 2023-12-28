@@ -1,14 +1,14 @@
-import { FC } from 'react';
-import HsAdminTable from './table';
-import HsAdminPage from './page';
+import { FC } from 'react'
+import HsAdminTable from './table'
+import HsAdminPage from './page'
 
 const HsAdminTablePage: FC<any> = (props: any) => {
-  const { pagination, ...rest } = props;
+  const { pagination, ...rest } = props
   const style = {
     display: 'flex',
     justifyContent: 'flex-end',
-    marginTop: 16,
-  };
+    marginTop: 16
+  }
 
   return (
     <>
@@ -19,7 +19,7 @@ const HsAdminTablePage: FC<any> = (props: any) => {
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default HsAdminTablePage;
+export default HsAdminTablePage

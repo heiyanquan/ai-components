@@ -1,1 +1,1 @@
-export type FormColSpanType = number | string;
+export type FormColSpanType = number | string

@@ -1,1 +1,1 @@
-export type SpinColSpanType = number | string;
+export type SpinColSpanType = number | string

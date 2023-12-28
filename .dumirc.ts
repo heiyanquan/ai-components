@@ -1,33 +1,31 @@
-import chalk from 'chalk';
-import { defineConfig } from 'dumi';
-import { readdirSync } from 'fs';
-import { join } from 'path';
+import chalk from 'chalk'
+import { defineConfig } from 'dumi'
+import { readdirSync } from 'fs'
+import { join } from 'path'
 
-const headPkgList: string[] = [];
-const pkgList = readdirSync(join(__dirname, 'packages')).filter(
-  (pkg) => pkg.charAt(0) !== '.' && !headPkgList.includes(pkg),
-);
+const headPkgList: string[] = []
+const pkgList = readdirSync(join(__dirname, 'packages')).filter((pkg) => pkg.charAt(0) !== '.' && !headPkgList.includes(pkg))
 
 const alias = pkgList.reduce((pre, pkg) => {
-  pre[`@react-admin/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+  pre[`@react-admin/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src')
   return {
-    ...pre,
-  };
-}, {});
-console.log(`🌼 alias list \n${chalk.blue(Object.keys(alias).join('\n'))}`);
+    ...pre
+  }
+}, {})
+console.log(`🌼 alias list \n${chalk.blue(Object.keys(alias).join('\n'))}`)
 
-const tailPkgList = pkgList.map((path) => `packages/${path}/src`);
+const tailPkgList = pkgList.map((path) => `packages/${path}/src`)
 
 export default defineConfig({
   alias,
   resolve: {
-    docDirs: ['docs', ...tailPkgList],
+    docDirs: ['docs', ...tailPkgList]
   },
   themeConfig: {
     name: 'react-admin',
     nav: [
       { title: '文档', link: '/docs' },
-      { title: '组件', link: '/components' },
+      { title: '组件', link: '/components' }
     ],
     sidebar: {
       '/components': [
@@ -36,42 +34,42 @@ export default defineConfig({
           children: [
             {
               title: 'spin - 加载中',
-              link: '/components/spin',
+              link: '/components/spin'
             },
             {
               title: 'table-page - 表格+分页',
-              link: '/components/table-page',
+              link: '/components/table-page'
             },
             {
               title: 'upload - 上传',
-              link: '/components/upload',
+              link: '/components/upload'
             },
             {
               title: 'scroll-select - 下拉滚动',
-              link: '/components/scroll-select',
+              link: '/components/scroll-select'
             },
             {
               title: 'form - 表单',
-              link: '/components/form',
+              link: '/components/form'
             },
             {
               title: 'codemirror - 编辑器',
-              link: '/components/codemirror',
-            },
-          ],
+              link: '/components/codemirror'
+            }
+          ]
         },
         {
           title: '工具方法',
           children: [
             {
               title: 'utils - 工具方法',
-              link: '/components/utils',
-            },
-          ],
-        },
-      ],
-    },
+              link: '/components/utils'
+            }
+          ]
+        }
+      ]
+    }
   },
   hash: true,
-  ignoreMomentLocale: true,
-});
+  ignoreMomentLocale: true
+})

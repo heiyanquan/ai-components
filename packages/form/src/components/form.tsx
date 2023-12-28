@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react'
 import {
   Form,
   InputNumber,
@@ -13,167 +13,148 @@ import {
   TimePicker,
   Transfer,
   TreeSelect,
-  FormProps,
-} from 'antd';
+  FormProps
+} from 'antd'
 
-import HsAdminInput from './input';
-import HsAdminSelect from './select';
+import HsAdminInput from './input'
+import HsAdminSelect from './select'
 
 export interface Options {
-  label?: string;
+  label?: string
   // 绑定字段名称
-  name: string;
+  name: string
   // 是否必填
-  required?: boolean;
+  required?: boolean
   // 组件名称
-  component: string;
+  component: string
   // 自定义插槽
-  slot?: string;
+  slot?: string
   // 自定义前缀插槽
-  prefix?: () => ReactNode;
+  prefix?: () => ReactNode
   // 自定义后缀插槽
-  suffix?: () => ReactNode;
+  suffix?: () => ReactNode
   // 自定义插槽父级class名称
-  fixClassName?: string;
+  fixClassName?: string
   // 自定义验证规则，同antd文档
-  rules?: object[];
+  rules?: object[]
   // 表单相关配置参数，同antd文档
-  componentProps?: any;
+  componentProps?: any
   // FormItem Col配置参数，同antd文档
-  FormItemColProps?: any;
+  FormItemColProps?: any
   // FormItem配置参数，同antd文档
-  FormItemProps?: any;
+  FormItemProps?: any
 }
 export interface Props extends FormProps {
   // 除了formItemOptions、rowProps、children以外剩余参数均为Form Props配置参数，同antd文档
-  rest?: any;
+  rest?: any
   // Row Props配置参数，同antd文档
-  rowProps?: any;
+  rowProps?: any
   // 每个FormItem里面的表单相关配置参数
-  formItemOptions: Options[];
+  formItemOptions: Options[]
   // 插槽子节点
-  children?: any | any[];
+  children?: any | any[]
 }
 
 const HsAdminForm: FC<Props> = (props: Props) => {
-  const { formItemOptions, rowProps, children, ...rest } = props;
-  const slotsMap = Object.create(null);
+  const { formItemOptions, rowProps, children, ...rest } = props
+  const slotsMap = Object.create(null)
   if (children) {
-    const customChildren = Array.isArray(children) ? children : [children];
+    const customChildren = Array.isArray(children) ? children : [children]
     customChildren?.forEach((item) => {
-      const { slot, children: slotChildren } = item.props;
-      slotsMap[slot] = slotChildren;
-    });
+      const { slot, children: slotChildren } = item.props
+      slotsMap[slot] = slotChildren
+    })
   }
-  const selectComponentsList = [
-    'Select',
-    'DatePicker',
-    'TreeSelect',
-    'HsAdminSelect',
-    'Cascader',
-    'Checkbox',
-    'Radio',
-    'TimePicker',
-    'Transfer',
-  ];
+  const selectComponentsList = ['Select', 'DatePicker', 'TreeSelect', 'HsAdminSelect', 'Cascader', 'Checkbox', 'Radio', 'TimePicker', 'Transfer']
 
   const handleRules = (item: Options) => {
-    let prefix: string = '请输入';
+    let prefix: string = '请输入'
     if (item.component && selectComponentsList.includes(item.component)) {
-      prefix = '请选择';
+      prefix = '请选择'
     }
     if (item.rules) {
-      return item.rules;
+      return item.rules
     } else if (item.required) {
-      return [{ required: true, message: `${prefix}${item.label}` }];
+      return [{ required: true, message: `${prefix}${item.label}` }]
     }
-    return undefined;
-  };
+    return undefined
+  }
   const componentMap: any = {
     Input: {
-      Component: HsAdminInput,
+      Component: HsAdminInput
     },
     TextArea: {
       Component: HsAdminInput,
-      defaultProps: { TextArea: true },
+      defaultProps: { TextArea: true }
     },
     Search: {
       Component: HsAdminInput,
-      defaultProps: { Search: true },
+      defaultProps: { Search: true }
     },
     Password: {
       Component: HsAdminInput,
-      defaultProps: { Password: true },
+      defaultProps: { Password: true }
     },
     Select: {
-      Component: HsAdminSelect,
+      Component: HsAdminSelect
     },
     InputNumber: {
-      Component: InputNumber,
+      Component: InputNumber
     },
     AutoComplete: {
-      Component: AutoComplete,
+      Component: AutoComplete
     },
     Cascader: {
-      Component: Cascader,
+      Component: Cascader
     },
     Checkbox: {
-      Component: Checkbox,
+      Component: Checkbox
     },
     DatePicker: {
-      Component: DatePicker,
+      Component: DatePicker
     },
     Radio: {
-      Component: Radio,
+      Component: Radio
     },
     Switch: {
-      Component: Switch,
+      Component: Switch
     },
     TimePicker: {
-      Component: TimePicker,
+      Component: TimePicker
     },
     Transfer: {
-      Component: Transfer,
+      Component: Transfer
     },
     TreeSelect: {
-      Component: TreeSelect,
-    },
-  };
+      Component: TreeSelect
+    }
+  }
   const LoadItemComponent = (item: Options) => {
     if (item.slot) {
-      return slotsMap[item.slot];
+      return slotsMap[item.slot]
     } else {
-      const { Component, defaultProps } = componentMap[item.component];
-      let placeholder: string = `请输入${item.label}`;
+      const { Component, defaultProps } = componentMap[item.component]
+      let placeholder: string = `请输入${item.label}`
       if (item.component && selectComponentsList.includes(item.component)) {
-        placeholder = `请选择${item.label}`;
+        placeholder = `请选择${item.label}`
       }
       if (item.componentProps?.placeholder) {
-        placeholder = item.componentProps.placeholder;
+        placeholder = item.componentProps.placeholder
       }
-      return <Component {...defaultProps} placeholder={placeholder} {...item.componentProps} />;
+      return <Component {...defaultProps} placeholder={placeholder} {...item.componentProps} />
     }
-  };
+  }
 
   return (
     <Form labelCol={{ span: 6 }} wrapperCol={{ span: 18 }} autoComplete="off" {...rest}>
       <Row {...rowProps}>
         {formItemOptions.map((item) => (
           <Col span={24} {...item.FormItemColProps} key={item.name || item.slot}>
-            <Form.Item
-              label={item.label}
-              name={item.name || item.slot}
-              rules={handleRules(item)}
-              {...item.FormItemProps}
-            >
+            <Form.Item label={item.label} name={item.name || item.slot} rules={handleRules(item)} {...item.FormItemProps}>
               {(item.prefix || item.suffix) && (
                 <div className={item.fixClassName || 'flex items-center'}>
                   {item.prefix && item.prefix()}
-                  <Form.Item
-                    name={item.name || item.slot}
-                    rules={handleRules(item)}
-                    {...item.FormItemProps}
-                  >
+                  <Form.Item name={item.name || item.slot} rules={handleRules(item)} {...item.FormItemProps}>
                     {LoadItemComponent(item)}
                   </Form.Item>
                   {item.suffix && item.suffix()}
@@ -185,7 +166,7 @@ const HsAdminForm: FC<Props> = (props: Props) => {
         ))}
       </Row>
     </Form>
-  );
-};
+  )
+}
 
-export default HsAdminForm;
+export default HsAdminForm

@@ -1,32 +1,32 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from 'react'
 
 export interface ProFieldProps {
   /**
    * 是否启用轻量模式
    */
-  light?: boolean;
+  light?: boolean
   /**
    * 空文本占位符
    */
-  emptyText?: ReactNode;
+  emptyText?: ReactNode
   /**
    * 标签名称
    */
-  label?: React.ReactNode;
+  label?: React.ReactNode
   /**
    * 渲染模式
    */
-  mode?: 'read' | 'edit';
+  mode?: 'read' | 'edit'
   /**
    * 设置 useSwr 的 key
    */
-  proFieldKey?: string;
+  proFieldKey?: string
   /**
    * 自定义渲染函数
    */
-  render?: any;
+  render?: any
   /**
    * 是否只读
    */
-  readonly?: boolean;
+  readonly?: boolean
 }

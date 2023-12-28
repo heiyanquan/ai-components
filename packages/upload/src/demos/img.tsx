@@ -1,6 +1,6 @@
-import { HsAdminUpload } from '@react-admin/pro-components';
-import { action } from './hooks';
-import { downloadFile, getFileInfoByIds, previewImg } from '@hs-admin/api';
+import { HsAdminUpload } from '@react-admin/pro-components'
+import { action } from './hooks'
+import { downloadFile, getFileInfoByIds, previewImg } from '@hs-admin/api'
 
 export default () => {
   return (
@@ -11,11 +11,11 @@ export default () => {
       accept=".jpg,.jpeg,.png"
       listType="picture"
       updateFile={(ids: any) => {
-        console.log('[ ids ] >', ids);
+        console.log('[ ids ] >', ids)
       }}
       downloadFile={downloadFile}
       getFileInfoByIds={getFileInfoByIds}
       previewImg={previewImg}
     />
-  );
-};
+  )
+}

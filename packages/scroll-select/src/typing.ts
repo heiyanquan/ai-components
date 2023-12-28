@@ -1,1 +1,1 @@
-export type ScrollSelectColSpanType = number | string;
+export type ScrollSelectColSpanType = number | string

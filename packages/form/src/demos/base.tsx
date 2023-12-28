@@ -1,20 +1,20 @@
-import { Form, Button, Space } from 'antd';
-import { FC, useEffect, useMemo } from 'react';
-import { HsAdminForm } from '@react-admin/pro-components';
-import { DraftFunction, useImmer } from 'use-immer';
-import { getAllUserList } from '@hs-admin/api';
+import { Form, Button, Space } from 'antd'
+import { FC, useEffect, useMemo } from 'react'
+import { HsAdminForm } from '@react-admin/pro-components'
+import { DraftFunction, useImmer } from 'use-immer'
+import { getAllUserList } from '@hs-admin/api'
 
 const FormPage: FC = () => {
-  const [form] = Form.useForm();
-  const [formValues, setformValues] = useImmer<any>({});
-  const [userList, setUserList] = useImmer<any[]>([]);
+  const [form] = Form.useForm()
+  const [formValues, setformValues] = useImmer<any>({})
+  const [userList, setUserList] = useImmer<any[]>([])
   // Row Props配置参数，同antd文档
   const rowProps = useMemo(
     () => ({
-      gutter: [0, 16],
+      gutter: [0, 16]
     }),
-    [],
-  );
+    []
+  )
   // 每个FormItem里面的表单相关配置参数
   const formItemOptions = useMemo(
     () => [
@@ -30,19 +30,19 @@ const FormPage: FC = () => {
         // 表单组件相关配置参数，同antd文档
         componentProps: {
           options: userList,
-          onChange: handleSearch,
+          onChange: handleSearch
         },
         // FormItem Col配置参数，同antd文档
         FormItemColProps: {
-          span: 12,
+          span: 12
         },
         // FormItem配置参数，同antd文档
         FormItemProps: {
           labelCol: { span: 6 },
-          wrapperCol: { span: 18 },
+          wrapperCol: { span: 18 }
         },
         // 自定义后缀插槽
-        suffix: () => <div className="flex-none ml-2">后缀</div>,
+        suffix: () => <div className="flex-none ml-2">后缀</div>
       },
       {
         label: '表名',
@@ -50,12 +50,12 @@ const FormPage: FC = () => {
         component: 'Input',
         required: true,
         FormItemColProps: {
-          span: 12,
+          span: 12
         },
         // 自定义后缀插槽
         suffix: () => <div className="mt-2">后缀</div>,
         // 自定义插槽父级class名称
-        fixClassName: 'flex flex-col',
+        fixClassName: 'flex flex-col'
       },
       {
         label: '表类型',
@@ -66,31 +66,31 @@ const FormPage: FC = () => {
           options: [
             {
               label: '主表',
-              value: 'main',
+              value: 'main'
             },
             {
               label: '从表-属性表',
-              value: 'attribute_subtable',
+              value: 'attribute_subtable'
             },
             {
               label: '从表-实体关联表',
-              value: 'entity_relation_subtable',
+              value: 'entity_relation_subtable'
             },
             {
               label: '配置表',
-              value: 'configuration',
+              value: 'configuration'
             },
             {
               label: '其他',
-              value: 'other',
-            },
-          ],
+              value: 'other'
+            }
+          ]
         },
         FormItemColProps: {
-          span: 12,
+          span: 12
         },
         // 自定义前缀插槽
-        prefix: () => <div className="flex-none mr-2">前缀</div>,
+        prefix: () => <div className="flex-none mr-2">前缀</div>
       },
       {
         label: '',
@@ -98,27 +98,27 @@ const FormPage: FC = () => {
         // 自定义插槽
         slot: 'submit',
         FormItemColProps: {
-          span: 24,
+          span: 24
         },
         FormItemProps: {
-          wrapperCol: { offset: 16 },
-        },
-      },
+          wrapperCol: { offset: 16 }
+        }
+      }
     ],
-    [],
-  );
+    []
+  )
 
   async function handleSearch() {
-    const fieldsValues = form.getFieldsValue();
-    console.log('handleSearch', fieldsValues);
-    console.log('formItemOptions', formItemOptions);
+    const fieldsValues = form.getFieldsValue()
+    console.log('handleSearch', fieldsValues)
+    console.log('formItemOptions', formItemOptions)
   }
   const onReset = () => {
-    form.resetFields();
-  };
+    form.resetFields()
+  }
   const onFill = () => {
-    form.setFieldsValue(formValues);
-  };
+    form.setFieldsValue(formValues)
+  }
 
   useEffect(() => {
     setformValues({
@@ -127,25 +127,19 @@ const FormPage: FC = () => {
       plan_lead: '测试1',
       production_lead: '章振南',
       plan_lead_id: 'f28b68fd-ecd7-48d0-8c39-09b74f551994',
-      production_lead_id: 'a03efbb2-f89c-4798-ba7c-5a91aaf6e418',
-    });
+      production_lead_id: 'a03efbb2-f89c-4798-ba7c-5a91aaf6e418'
+    })
     getAllUserList({
       page: 1,
-      page_size: 100,
+      page_size: 100
     }).then((res: any[] | DraftFunction<any[]>) => {
-      setUserList(res);
-    });
-  }, []);
+      setUserList(res)
+    })
+  }, [])
 
   return (
     // 除了formItemOptions、rowProps、children以外剩余参数均为Form Props配置参数，同antd文档
-    <HsAdminForm
-      formItemOptions={formItemOptions}
-      form={form}
-      rowProps={rowProps}
-      labelCol={{ span: 6 }}
-      wrapperCol={{ span: 18 }}
-    >
+    <HsAdminForm formItemOptions={formItemOptions} form={form} rowProps={rowProps} labelCol={{ span: 6 }} wrapperCol={{ span: 18 }}>
       <div slot="submit">
         <Space>
           <Button type="primary" htmlType="submit">
@@ -160,7 +154,7 @@ const FormPage: FC = () => {
         </Space>
       </div>
     </HsAdminForm>
-  );
-};
+  )
+}
 
-export default FormPage;
+export default FormPage

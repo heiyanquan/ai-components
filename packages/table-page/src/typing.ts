@@ -1,1 +1,1 @@
-export type TablePageColSpanType = number | string;
+export type TablePageColSpanType = number | string

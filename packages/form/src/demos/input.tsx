@@ -1,4 +1,4 @@
-import { HsAdminInput } from '@react-admin/pro-components';
+import { HsAdminInput } from '@react-admin/pro-components'
 
 export default () => {
   return (
@@ -6,5 +6,5 @@ export default () => {
       <HsAdminInput defaultValue="Hello dumi!" />
       <HsAdminInput TextArea defaultValue="Hello dumi!" />
     </>
-  );
-};
+  )
+}

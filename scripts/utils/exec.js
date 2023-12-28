@@ -6,20 +6,20 @@ function exec(command, args, opts) {
       shell: true,
       stdio: 'inherit',
       env: process.env,
-      ...opts,
-    });
+      ...opts
+    })
     child.once('error', (err) => {
-      console.log(err);
-      reject(err);
-    });
+      console.log(err)
+      reject(err)
+    })
     child.once('close', (code) => {
       if (code === 1) {
-        process.exit(1);
+        process.exit(1)
       } else {
-        resolve();
+        resolve()
       }
-    });
-  });
-};
+    })
+  })
+}
 
 export default exec

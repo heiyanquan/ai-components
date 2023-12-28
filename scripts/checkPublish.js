@@ -1,10 +1,10 @@
-﻿const docker = require('@umijs/doctor');
-const path = require('path');
+﻿const docker = require('@umijs/doctor')
+const path = require('path')
 
-const repo_path = path.join(__dirname, '..');
+const repo_path = path.join(__dirname, '..')
 
 const checkPublish = () => {
-  docker.checkPublish(repo_path);
-};
+  docker.checkPublish(repo_path)
+}
 
-checkPublish();
+checkPublish()

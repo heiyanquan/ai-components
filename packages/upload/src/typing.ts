@@ -1,1 +1,1 @@
-export type UploadColSpanType = number | string;
+export type UploadColSpanType = number | string

@@ -1,3 +1,3 @@
-import { HsAdminSpin } from '@react-admin/pro-components';
+import { HsAdminSpin } from '@react-admin/pro-components'
 
-export default () => <HsAdminSpin />;
+export default () => <HsAdminSpin />

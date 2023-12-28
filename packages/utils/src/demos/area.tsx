@@ -1,4 +1,4 @@
-import { allProvinceList } from '@react-admin/pro-utils';
+import { allProvinceList } from '@react-admin/pro-utils'
 
 export default () => {
   return (
@@ -7,5 +7,5 @@ export default () => {
       <pre>{JSON.stringify(allProvinceList, null, 2)}</pre>
       <h1>市allCityList、区allAreaList可自行查看</h1>
     </>
-  );
-};
+  )
+}
