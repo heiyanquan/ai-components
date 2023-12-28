@@ -7,5 +7,5 @@ export const version = {
   '@react-admin/pro-spin': '0.0.5',
   '@react-admin/pro-table-page': '0.0.7',
   '@react-admin/pro-upload': '0.0.5',
-  '@react-admin/pro-utils': '0.0.12',
-};
+  '@react-admin/pro-utils': '0.0.12'
+}

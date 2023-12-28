@@ -1,6 +1,8 @@
-const { readdirSync } = require('fs');
-const { join } = require('path');
+import { readdirSync } from 'fs'
+import { join } from 'path'
 
-module.exports = function getPackages() {
+function getPackages() {
   return readdirSync(join(__dirname, '../../packages')).filter((pkg) => pkg.charAt(0) !== '.');
 };
+
+export default getPackages

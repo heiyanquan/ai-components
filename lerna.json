@@ -1,7 +1,5 @@
 {
   "version": "independent",
-  "npmClient": "pnpm",
-  "useWorkspaces": true,
   "changelog": {
     "repo": "react-admin/pro-components",
     "cacheDir": ".changelog"

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 // Invoked on the commit-msg git hook by yorkie.
 
-const { chalk } = require('@umijs/utils');
+import { chalk } from '@umijs/utils'
 
 const msgPath = process.env.GIT_PARAMS;
 const msg = require('fs').readFileSync(msgPath, 'utf-8').trim();
