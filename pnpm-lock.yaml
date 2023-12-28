@@ -32,7 +32,6 @@ importers:
       lerna: ^3.22.1
       lint-staged: ^13.0.3
       lodash: ^4.17.21
-      omit.js: ^2.0.2
       prettier: ^2.8.8
       prettier-plugin-organize-imports: ^3.0.0
       prettier-plugin-packagejson: ^2.2.18
@@ -76,7 +75,6 @@ importers:
       inquirer: 8.2.6
       lerna: 3.22.1
       lint-staged: 13.3.0
-      omit.js: 2.0.2
       prettier: 2.8.8
       prettier-plugin-organize-imports: 3.2.4_rz3vod7ggbjnoxculplzip7rie
       prettier-plugin-packagejson: 2.4.7_prettier@2.8.8
@@ -13663,10 +13661,6 @@ packages:
     dependencies:
       is-plain-object: 2.0.4
       unset-value: 0.1.2
-    dev: true
-
-  /omit.js/2.0.2:
-    resolution: {integrity: sha512-hJmu9D+bNB40YpL9jYebQl4lsTW6yEHRTroJzNLqQJYHm7c+NQnJGfZmIWh8S3q3KoaxV1aLhV6B3+0N0/kyJg==}
     dev: true
 
   /on-exit-leak-free/0.2.0:
