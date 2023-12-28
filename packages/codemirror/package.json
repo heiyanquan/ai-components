@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-codemirror",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "@react-admin/pro-codemirror",
   "license": "MIT",
   "sideEffects": false,
