@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-spin",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "@react-admin/pro-spin",
   "license": "MIT",
   "sideEffects": false,
