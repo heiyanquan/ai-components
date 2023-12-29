@@ -101,8 +101,8 @@ async function release() {
     }
     if (!args.publishOnly || !isPackageExist) {
       console.log(`[${index + 1}/${pkgs.length}] Publish package ${name} ${isNext ? 'with next tag' : ''}`)
-      // 默认设置为 tag 检查通过之后在设置为 latest
-      let cliArgs = isNext ? ['publish', '--tag', 'next'] : ['publish', '--tag', 'beta']
+      // tag默认设置为latest
+      let cliArgs = isNext ? ['publish', '--tag', 'next'] : ['publish', '--tag', 'latest']
 
       if (args.tag) {
         cliArgs = ['publish', '--tag', args.tag]

@@ -84,7 +84,7 @@ importers:
   packages/api:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.12
+      '@react-admin/pro-utils': ^0.0.14
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-utils': link:../utils
@@ -128,13 +128,13 @@ importers:
   packages/components:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-codemirror': ^0.0.4
-      '@react-admin/pro-form': ^0.0.6
-      '@react-admin/pro-scroll-select': ^0.0.3
-      '@react-admin/pro-spin': ^0.0.5
-      '@react-admin/pro-table-page': ^0.0.7
-      '@react-admin/pro-upload': ^0.0.5
-      '@react-admin/pro-utils': ^0.0.12
+      '@react-admin/pro-codemirror': ^0.0.6
+      '@react-admin/pro-form': ^0.0.8
+      '@react-admin/pro-scroll-select': ^0.0.5
+      '@react-admin/pro-spin': ^0.0.8
+      '@react-admin/pro-table-page': ^0.0.9
+      '@react-admin/pro-upload': ^0.0.7
+      '@react-admin/pro-utils': ^0.0.14
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-codemirror': link:../codemirror
@@ -166,7 +166,7 @@ importers:
   packages/table-page:
     specifiers:
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.12
+      '@react-admin/pro-utils': ^0.0.14
     dependencies:
       '@babel/runtime': 7.23.6
       '@react-admin/pro-utils': link:../utils
@@ -175,7 +175,7 @@ importers:
     specifiers:
       '@ant-design/icons': ^5.2.6
       '@babel/runtime': ^7.18.0
-      '@react-admin/pro-utils': ^0.0.12
+      '@react-admin/pro-utils': ^0.0.14
     dependencies:
       '@ant-design/icons': 5.2.6
       '@babel/runtime': 7.23.6
@@ -252,7 +252,7 @@ packages:
       '@ant-design/colors': 7.0.0
       '@ant-design/icons-svg': 4.3.1
       '@babel/runtime': 7.23.6
-      classnames: 2.5.0
+      classnames: 2.3.2
       rc-util: 5.38.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -13831,6 +13831,7 @@ packages:
 
   /postcss-media-query-parser/0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
+    requiresBuild: true
     dev: true
     optional: true
 
