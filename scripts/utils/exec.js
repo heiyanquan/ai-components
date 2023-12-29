@@ -9,7 +9,7 @@ function exec(command, args, opts) {
       ...opts
     })
     child.once('error', (err) => {
-      console.log(err)
+      console.log('exec error', err)
       reject(err)
     })
     child.once('close', (code) => {
