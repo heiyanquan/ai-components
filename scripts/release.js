@@ -74,7 +74,7 @@ async function release() {
     const major = args.major ? 'major' : ''
     const minor = args.minor ? 'minor' : ''
     try {
-      await execa('lerna', ['version', 'patch'], {
+      await execa('lerna', ['version', major || minor || 'patch'], {
         stdio: 'inherit'
       })
     } catch (error) {
