@@ -38,7 +38,7 @@ const HsAdminCodemirror: FC<Props> = (props: Props) => {
 
   return (
     <>
-      <Select value={mode} options={options} onChange={handleLangChange} style={{ width: 240 }} placeholder="请选择语言" {...selectProps}></Select>
+      <Select value={mode} options={options} onChange={handleLangChange} style={{ width: 240 }} placeholder="请选择语言1" {...selectProps}></Select>
       <br />
       <br />
       <HsAdminBaseCodemirror value={value} lang={mode} {...rest} />
