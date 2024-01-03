@@ -1,7 +1,7 @@
-import chalk from 'chalk'
 import { defineConfig } from 'dumi'
 import { readdirSync } from 'fs'
 import { join } from 'path'
+import { chalk } from '@umijs/utils'
 
 const headPkgList: string[] = []
 const pkgList = readdirSync(join(__dirname, 'packages')).filter((pkg) => pkg.charAt(0) !== '.' && !headPkgList.includes(pkg))
