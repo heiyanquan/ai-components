@@ -22,7 +22,8 @@
       "@react-admin/spin": ["./packages/spin/src/index.tsx"],
       "@react-admin/table-page": ["./packages/table-page/src/index.tsx"],
       "@react-admin/upload": ["./packages/upload/src/index.tsx"],
-      "@react-admin/pro-utils": ["./packages/utils/src/index.tsx"]
+      "@react-admin/pro-utils": ["./packages/utils/src/index.tsx"],
+      "@react-admin/pro-quill": ["./packages/quill/src/index.tsx"]
     },
     "ignoreDeprecations": "5.0",
     "module": "ES2022"

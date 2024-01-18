@@ -53,8 +53,12 @@ export default defineConfig({
               link: '/components/form'
             },
             {
-              title: 'codemirror - 编辑器',
+              title: 'codemirror - 代码编辑器',
               link: '/components/codemirror'
+            },
+            {
+              title: 'quill - 富文本编辑器',
+              link: '/components/quill'
             }
           ]
         },
