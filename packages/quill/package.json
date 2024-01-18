@@ -1,6 +1,6 @@
 {
   "name": "@react-admin/pro-quill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@react-admin/pro-quill",
   "license": "MIT",
   "sideEffects": false,
