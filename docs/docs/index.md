@@ -16,7 +16,7 @@ react-admin 是基于 react18、antd5.0 二次开发的管理后台组件库，�
 - [HsAdminSelect](/components/form) 选择器基础组件
 - [HsAdminTable](/components/table-page) 表格基础组件
 - [HsAdminPage](/components/table-page) 分页基础组件
-- [HsAdminHsAdminTablePage](/components/table-page) 表格+分页基础组件
+- [HsAdminTablePage](/components/table-page) 表格+分页基础组件
 
 ## 安装
 
