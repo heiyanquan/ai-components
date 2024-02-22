@@ -27,7 +27,7 @@ $ pnpm i @react-admin/pro-components --save
 .npmrc需要指定安装源，文件内容如下
 
 ```npmrc
-registry=https://repo.aihuoshi.net/repository/npmjs/
+registry=http://nexus.aihuoshi.net/repository/npmjs/
 strict-peer-dependencies=false
 ```
 
