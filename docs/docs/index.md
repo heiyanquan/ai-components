@@ -24,4 +24,11 @@ react-admin 是基于 react18、antd5.0 二次开发的管理后台组件库，�
 $ pnpm i @react-admin/pro-components --save
 ```
 
+.npmrc需要指定安装源，文件内容如下
+
+```npmrc
+registry=https://repo.aihuoshi.net/repository/npmjs/
+strict-peer-dependencies=false
+```
+
 我们所有的包都使用 css in js 管理样式，只需引入 js 即可。
