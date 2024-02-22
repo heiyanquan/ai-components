@@ -1,8 +1,8 @@
 ---
-title: HsAdminCodemirror - 在线编辑器
+title: HsAdminCodemirror - 代码编辑器
 ---
 
-# HsAdminCodemirror - 在线编辑器
+# HsAdminCodemirror - 代码编辑器
 
 ## 代码演示
 
