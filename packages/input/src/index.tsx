@@ -1,7 +1,7 @@
 import type { InputType } from './typing'
 
 const ZsAiInput: any = (props: any) => {
-  return <input {...props} />
+  return <input {...props} name="input" />
 }
 
 export type { InputType }
