@@ -17,33 +17,9 @@
       "@@/*": [
         ".dumi/tmp/*"
       ],
-      "@zs-ai/pro-codemirror": [
-        "./packages/codemirror/src/index.tsx"
-      ],
-      "@zs-ai/pro-components": [
-        "./packages/components/src/index.tsx"
-      ],
-      "@zs-ai/pro-form": [
-        "./packages/form/src/index.tsx"
-      ],
-      "@zs-ai/scroll-select": [
-        "./packages/scroll-select/src/index.tsx"
-      ],
-      "@zs-ai/spin": [
-        "packages/text/src/index.tsx"
-      ],
-      "@zs-ai/table-page": [
-        "./packages/table-page/src/index.tsx"
-      ],
-      "@zs-ai/upload": [
-        "./packages/upload/src/index.tsx"
-      ],
-      "@zs-ai/pro-utils": [
-        "./packages/utils/src/index.tsx"
-      ],
-      "@zs-ai/pro-quill": [
+      "@zs-ai/input": [
         "packages/input/src/index.tsx"
-      ]
+      ],
     },
     "ignoreDeprecations": "5.0",
     "module": "ES2022"

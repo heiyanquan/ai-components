@@ -75,12 +75,3 @@ packages/foo
 └── package.json
 ```
 
-change the `authors` in package.json
-
-发布 npm publish --tag=beta #发布不稳定 beta 版 npm publish #发布稳定版，即 npm publish --tag=latest
-
-安装 npm install [npm-name]@beta #安装 beta 版 npm install [npm-name] #安装最新的稳定版，即 npm install [npm-name]@latest
-
-pnpm install @zs-ai/utils -r --filter @zs-ai/components pnpm up --filter @zs-ai/utils @vitejs/plugin-vue -r --latest
-
-npm adduser --registry=http://nexus.aihuoshi.net/repository/npmjs-huoshi/
