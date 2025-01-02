@@ -1,15 +1,16 @@
 {
-  "name": "@zs-ai/text",
-  "version": "0.0.3",
+  "name": "@zs-ai/components",
+  "version": "0.0.2",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
+  "unpkg": "dist/components.min.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
+    "dist",
     "lib",
-    "es",
-    "dist"
+    "es"
   ],
   "scripts": {
     "build": "father build"
@@ -22,6 +23,9 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0"
+  },
+  "peerDependencies": {
+    "lodash": ">=4.17.21"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
