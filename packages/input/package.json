@@ -1,6 +1,6 @@
 {
   "name": "@zs-ai/input",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -24,7 +24,8 @@
     "@babel/runtime": "^7.18.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "gitHead": "49947e1298a7ce285cfb47514487a3d660b3bd93"
 }
