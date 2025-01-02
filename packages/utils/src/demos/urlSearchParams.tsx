@@ -1,4 +1,4 @@
-import { getUrlSearchParams } from '@react-admin/pro-utils'
+import { getUrlSearchParams } from '@zs-ai/pro-utils'
 
 export default () => {
   const paramsString = 'https://datashop.aihuoshi.net/?q=URLUtils.searchParams&topic=api'

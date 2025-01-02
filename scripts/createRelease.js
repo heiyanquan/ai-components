@@ -52,7 +52,7 @@ const getMds = async (allVersion = false) => {
   }
   console.log(versions.toString())
   versions.map(async (version) => {
-    const versionPkg = `@react-admin/pro-${pkg}@${version}`
+    const versionPkg = `@zs-ai/pro-${pkg}@${version}`
     const changeLog = getChangelog(content, versionPkg)
 
     if (!changeLog) {
@@ -64,7 +64,7 @@ const getMds = async (allVersion = false) => {
     try {
       const tag = await github.rest.repos
         .getReleaseByTag({
-          owner: 'react-admin',
+          owner: 'zs-ai',
           repo: 'pro-components',
           tag: versionPkg
         })
@@ -82,7 +82,7 @@ const getMds = async (allVersion = false) => {
       if (!tag.body && tag) {
         github.rest.repos
           .updateRelease({
-            owner: 'react-admin',
+            owner: 'zs-ai',
             release_id,
             repo: 'pro-components',
             tag_name: versionPkg,
@@ -102,7 +102,7 @@ const getMds = async (allVersion = false) => {
       console.log(versionPkg + '标签创建中')
       github.rest.repos
         .createRelease({
-          owner: 'react-admin',
+          owner: 'zs-ai',
           repo: 'pro-components',
           tag_name: versionPkg,
           name: versionPkg,

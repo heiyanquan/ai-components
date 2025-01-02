@@ -7,7 +7,7 @@ const slash = require('slash2')
 const fs = require('fs')
 const { join, posix } = require('path')
 
-const peerDependencies = ['antd', 'react', 'rc-field-form']
+const peerDependencies = ['rc-field-form']
 
 /**
  * 替换文件中的 formatMessage
@@ -58,7 +58,7 @@ const checkDepsByAst = (ast, filePath) => {
           if (!importPath.startsWith('.') && path.node.importKind !== 'type') {
             const packagePath = slash(filePath.split(posix.sep).splice(0, 2).join(posix.sep))
             try {
-              if (importPath.includes('@react-admin/pro')) return
+              if (importPath.includes('@zs-ai/pro')) return
               // 检查包在不在
               require.resolve(importPath, {
                 paths: [slash(join(__dirname, '..', packagePath))]

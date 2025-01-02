@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url'
 const __filenameNew = fileURLToPath(import.meta.url)
 const __dirnameNew = dirname(__filenameNew)
 // utils must build before core
-// runtime must build before renderer-react
+// runtime must build before renderer
 let packagesPath = join(__dirnameNew, '../packages')
 const pkgList = readdirSync(packagesPath)
   .filter((pkg) => pkg.charAt(0) !== '.')

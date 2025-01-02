@@ -9,7 +9,7 @@ const { yParser } = require('@umijs/utils')
   const pkgs = readdirSync(join(__dirname, '../packages')).filter((pkg) => pkg.charAt(0) !== '.')
 
   pkgs.forEach((shortName) => {
-    const name = `@react-admin/pro-${shortName}`
+    const name = `@zs-ai/pro-${shortName}`
 
     const pkgJSONPath = join(__dirname, '..', 'packages', shortName, 'package.json')
     const pkgJSONExists = existsSync(pkgJSONPath)
@@ -25,10 +25,10 @@ const { yParser } = require('@umijs/utils')
         types: 'lib/index.d.ts',
         files: ['lib', 'src', 'dist', 'es'],
         browserslist: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 11'],
-        keywords: ['antd', 'admin', 'react-admin'],
+        keywords: ['antd', 'admin', 'zs-ai'],
         license: 'MIT',
         bugs: 'http://github.com/umijs/plugins/issues',
-        homepage: `https://git.aihuoshi.net/algo_analysis_plat/web/fd-react-admin-components/-/tree/release/packages/${shortName}#readme`,
+        homepage: `https://git.aihuoshi.net/algo_analysis_plat/web/fd-zs-ai-components/-/tree/release/packages/${shortName}#readme`,
         peerDependencies: {
           umi: '3.x'
         },

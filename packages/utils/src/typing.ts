@@ -1,18 +1,8 @@
-import type { ReactNode } from 'react'
-
 export interface ProFieldProps {
   /**
    * 是否启用轻量模式
    */
   light?: boolean
-  /**
-   * 空文本占位符
-   */
-  emptyText?: ReactNode
-  /**
-   * 标签名称
-   */
-  label?: React.ReactNode
   /**
    * 渲染模式
    */

@@ -1,7 +1,7 @@
 {
   "version": "independent",
   "changelog": {
-    "repo": "react-admin/pro-components",
+    "repo": "zs-ai/components",
     "cacheDir": ".changelog"
   },
   "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/*.e2e.ts", "**/demos/**", "**/fixtures/**", "**/dist/**", "**/lib/**", "**/es/**", "**/test/**"],

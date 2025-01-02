@@ -48,14 +48,13 @@ pnpm test --coverage
 ## Release
 
 ```bash
-pnpm --filter '@react-admin/**' build
+pnpm --filter '@zs-ai/**' build
 npm run release -- --tag=latest
 npm run release
 npm run release -- --publish-only
 npm run release -- --skip-git-status-check
 npm run release -- --skip-build
 npm run release -- --conventional-graduate
-npm run release -- --conventional-graduate preset-react,plugin-dva
 ```
 
 ## Create new package
@@ -82,6 +81,6 @@ change the `authors` in package.json
 
 安装 npm install [npm-name]@beta #安装 beta 版 npm install [npm-name] #安装最新的稳定版，即 npm install [npm-name]@latest
 
-pnpm install @react-admin/utils -r --filter @react-admin/components pnpm up --filter @react-admin/utils @vitejs/plugin-vue -r --latest
+pnpm install @zs-ai/utils -r --filter @zs-ai/components pnpm up --filter @zs-ai/utils @vitejs/plugin-vue -r --latest
 
 npm adduser --registry=http://nexus.aihuoshi.net/repository/npmjs-huoshi/

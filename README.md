@@ -1,4 +1,4 @@
-# react-admin
+# zs-ai
 
 ```bash
 # install dependencies
