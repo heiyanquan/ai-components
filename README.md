@@ -24,8 +24,6 @@ $ pnpm run doctor
 
 MIT
 
-发布源： http://nexus.aihuoshi.net/repository/npmjs-huoshi/
+npm config get registry
 
-下载源： http://nexus.aihuoshi.net/repository/npmjs-proxy/
-
-账号：admin 密码：ObbXM5PyXhuR0SNG
+npm config set registry https://registry.npmjs.org/
