@@ -1,6 +1,6 @@
 {
   "name": "@zs-ai/components",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@zs-ai/input": "^0.0.12"
+    "@zs-ai/input": "^0.0.13"
   },
   "peerDependencies": {
     "lodash": ">=4.17.21"
