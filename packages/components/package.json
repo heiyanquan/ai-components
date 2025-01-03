@@ -23,10 +23,12 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.18.0",
-    "@zs-ai/input": "^0.0.13"
+    "@lit/react": "^1.0.6",
+    "@zs-ai/input": "^0.0.13",
+    "lit": "^3.2.1",
+    "react": "^18.0.0"
   },
   "peerDependencies": {
-    "lodash": ">=4.17.21"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
