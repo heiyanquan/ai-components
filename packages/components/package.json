@@ -22,7 +22,8 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.18.0"
+    "@babel/runtime": "^7.18.0",
+    "@zs-ai/input": "^0.0.12"
   },
   "peerDependencies": {
     "lodash": ">=4.17.21"

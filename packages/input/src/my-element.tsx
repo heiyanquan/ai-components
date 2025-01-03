@@ -24,12 +24,12 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <div>
-        <a href="https://vite.dev" target="_blank"> viteLogo </a>
-        <a href="https://lit.dev" target="_blank"> litLogo </a>
+        <a href="https://vite.dev" target="_blank">viteLogo</a>
+        <a href="https://lit.dev" target="_blank">litLogo</a>
       </div>
       <slot></slot>
       <div class="card">
-        <button @click=${this._onClick} part="button"> count is ${this.count} </button>
+        <button @click=${this._onClick} part="button">count is ${this.count}</button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
     `
