@@ -1,6 +1,6 @@
 {
   "name": "@zs-ai/components",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -24,11 +24,9 @@
   "dependencies": {
     "@babel/runtime": "^7.18.0",
     "@lit/react": "^1.0.6",
-    "@zs-ai/input": "^0.0.13",
+    "@zs-ai/input": "^0.0.14",
     "lit": "^3.2.1",
     "react": "^18.0.0"
-  },
-  "peerDependencies": {
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
