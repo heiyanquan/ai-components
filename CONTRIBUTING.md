@@ -74,4 +74,3 @@ packages/foo
 ├── README.md
 └── package.json
 ```
-

@@ -35,9 +35,9 @@ export default defineConfig({
             {
               title: 'input - 加载中',
               link: '/components/input'
-            },
+            }
           ]
-        },
+        }
       ]
     }
   },

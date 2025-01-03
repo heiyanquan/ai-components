@@ -14,12 +14,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "paths": {
-      "@@/*": [
-        ".dumi/tmp/*"
-      ],
-      "@zs-ai/input": [
-        "packages/input/src/index.tsx"
-      ],
+      "@@/*": [".dumi/tmp/*"],
+      "@zs-ai/input": ["packages/input/src/index.tsx"]
     },
     "ignoreDeprecations": "5.0",
     "module": "ES2022"
